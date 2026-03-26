@@ -1,0 +1,1525 @@
+{
+  "endpoint": "tipo_de_prestador",
+  "total": 11,
+  "pages": 1,
+  "items": [
+    {
+      "id": 559,
+      "count": 46,
+      "description": "",
+      "link": "https://osmedica.com.ar/tipo-de-prestador/centro-de-dialisis/",
+      "name": "Centros de Diálisis",
+      "slug": "centro-de-dialisis",
+      "taxonomy": "tipo_de_prestador",
+      "parent": 0,
+      "meta": [],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.0 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Centros de Diálisis archivos - OSMEDICA</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Centros de Diálisis archivos - OSMEDICA\" />\n<meta property=\"og:url\" content=\"https://osmedica.com.ar/tipo-de-prestador/centro-de-dialisis/\" />\n<meta property=\"og:site_name\" content=\"OSMEDICA\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/centro-de-dialisis/\",\"url\":\"https://osmedica.com.ar/tipo-de-prestador/centro-de-dialisis/\",\"name\":\"Centros de Diálisis archivos - OSMEDICA\",\"isPartOf\":{\"@id\":\"https://osmedica.com.ar/#website\"},\"breadcrumb\":{\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/centro-de-dialisis/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/centro-de-dialisis/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://osmedica.com.ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Centro de Diálisis\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://osmedica.com.ar/#website\",\"url\":\"https://osmedica.com.ar/\",\"name\":\"OSMEDICA\",\"description\":\"La obra social de los médicos\",\"publisher\":{\"@id\":\"https://osmedica.com.ar/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://osmedica.com.ar/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://osmedica.com.ar/#organization\",\"name\":\"OSMEDICA\",\"url\":\"https://osmedica.com.ar/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\",\"url\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"contentUrl\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"width\":600,\"height\":119,\"caption\":\"OSMEDICA\"},\"image\":{\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Centros de Diálisis archivos - OSMEDICA",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "es_ES",
+        "og_type": "article",
+        "og_title": "Centros de Diálisis archivos - OSMEDICA",
+        "og_url": "https://osmedica.com.ar/tipo-de-prestador/centro-de-dialisis/",
+        "og_site_name": "OSMEDICA",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/centro-de-dialisis/",
+              "url": "https://osmedica.com.ar/tipo-de-prestador/centro-de-dialisis/",
+              "name": "Centros de Diálisis archivos - OSMEDICA",
+              "isPartOf": {
+                "@id": "https://osmedica.com.ar/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://osmedica.com.ar/tipo-de-prestador/centro-de-dialisis/#breadcrumb"
+              },
+              "inLanguage": "es"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/centro-de-dialisis/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada",
+                  "item": "https://osmedica.com.ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Centro de Diálisis"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://osmedica.com.ar/#website",
+              "url": "https://osmedica.com.ar/",
+              "name": "OSMEDICA",
+              "description": "La obra social de los médicos",
+              "publisher": {
+                "@id": "https://osmedica.com.ar/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://osmedica.com.ar/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://osmedica.com.ar/#organization",
+              "name": "OSMEDICA",
+              "url": "https://osmedica.com.ar/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/",
+                "url": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "contentUrl": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "width": 600,
+                "height": 119,
+                "caption": "OSMEDICA"
+              },
+              "image": {
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador/559",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/taxonomies/tipo_de_prestador"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/cartilla?tipo_de_prestador=559"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 447,
+      "count": 139,
+      "description": "",
+      "link": "https://osmedica.com.ar/tipo-de-prestador/especialidad/",
+      "name": "Centros, Clínicas y Sanatorios",
+      "slug": "especialidad",
+      "taxonomy": "tipo_de_prestador",
+      "parent": 0,
+      "meta": [],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.0 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Centros, Clínicas y Sanatorios archivos - OSMEDICA</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Centros, Clínicas y Sanatorios archivos - OSMEDICA\" />\n<meta property=\"og:url\" content=\"https://osmedica.com.ar/tipo-de-prestador/especialidad/\" />\n<meta property=\"og:site_name\" content=\"OSMEDICA\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/especialidad/\",\"url\":\"https://osmedica.com.ar/tipo-de-prestador/especialidad/\",\"name\":\"Centros, Clínicas y Sanatorios archivos - OSMEDICA\",\"isPartOf\":{\"@id\":\"https://osmedica.com.ar/#website\"},\"breadcrumb\":{\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/especialidad/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/especialidad/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://osmedica.com.ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Centros, profesionales y especialidades\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://osmedica.com.ar/#website\",\"url\":\"https://osmedica.com.ar/\",\"name\":\"OSMEDICA\",\"description\":\"La obra social de los médicos\",\"publisher\":{\"@id\":\"https://osmedica.com.ar/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://osmedica.com.ar/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://osmedica.com.ar/#organization\",\"name\":\"OSMEDICA\",\"url\":\"https://osmedica.com.ar/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\",\"url\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"contentUrl\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"width\":600,\"height\":119,\"caption\":\"OSMEDICA\"},\"image\":{\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Centros, Clínicas y Sanatorios archivos - OSMEDICA",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "es_ES",
+        "og_type": "article",
+        "og_title": "Centros, Clínicas y Sanatorios archivos - OSMEDICA",
+        "og_url": "https://osmedica.com.ar/tipo-de-prestador/especialidad/",
+        "og_site_name": "OSMEDICA",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/especialidad/",
+              "url": "https://osmedica.com.ar/tipo-de-prestador/especialidad/",
+              "name": "Centros, Clínicas y Sanatorios archivos - OSMEDICA",
+              "isPartOf": {
+                "@id": "https://osmedica.com.ar/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://osmedica.com.ar/tipo-de-prestador/especialidad/#breadcrumb"
+              },
+              "inLanguage": "es"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/especialidad/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada",
+                  "item": "https://osmedica.com.ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Centros, profesionales y especialidades"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://osmedica.com.ar/#website",
+              "url": "https://osmedica.com.ar/",
+              "name": "OSMEDICA",
+              "description": "La obra social de los médicos",
+              "publisher": {
+                "@id": "https://osmedica.com.ar/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://osmedica.com.ar/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://osmedica.com.ar/#organization",
+              "name": "OSMEDICA",
+              "url": "https://osmedica.com.ar/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/",
+                "url": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "contentUrl": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "width": 600,
+                "height": 119,
+                "caption": "OSMEDICA"
+              },
+              "image": {
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador/447",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/taxonomies/tipo_de_prestador"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/cartilla?tipo_de_prestador=447"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 448,
+      "count": 110,
+      "description": "",
+      "link": "https://osmedica.com.ar/tipo-de-prestador/estudio/",
+      "name": "Estudios o prácticas",
+      "slug": "estudio",
+      "taxonomy": "tipo_de_prestador",
+      "parent": 0,
+      "meta": [],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.0 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Estudios o prácticas archivos - OSMEDICA</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Estudios o prácticas archivos - OSMEDICA\" />\n<meta property=\"og:url\" content=\"https://osmedica.com.ar/tipo-de-prestador/estudio/\" />\n<meta property=\"og:site_name\" content=\"OSMEDICA\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/estudio/\",\"url\":\"https://osmedica.com.ar/tipo-de-prestador/estudio/\",\"name\":\"Estudios o prácticas archivos - OSMEDICA\",\"isPartOf\":{\"@id\":\"https://osmedica.com.ar/#website\"},\"breadcrumb\":{\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/estudio/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/estudio/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://osmedica.com.ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Estudios o prácticas\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://osmedica.com.ar/#website\",\"url\":\"https://osmedica.com.ar/\",\"name\":\"OSMEDICA\",\"description\":\"La obra social de los médicos\",\"publisher\":{\"@id\":\"https://osmedica.com.ar/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://osmedica.com.ar/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://osmedica.com.ar/#organization\",\"name\":\"OSMEDICA\",\"url\":\"https://osmedica.com.ar/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\",\"url\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"contentUrl\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"width\":600,\"height\":119,\"caption\":\"OSMEDICA\"},\"image\":{\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Estudios o prácticas archivos - OSMEDICA",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "es_ES",
+        "og_type": "article",
+        "og_title": "Estudios o prácticas archivos - OSMEDICA",
+        "og_url": "https://osmedica.com.ar/tipo-de-prestador/estudio/",
+        "og_site_name": "OSMEDICA",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/estudio/",
+              "url": "https://osmedica.com.ar/tipo-de-prestador/estudio/",
+              "name": "Estudios o prácticas archivos - OSMEDICA",
+              "isPartOf": {
+                "@id": "https://osmedica.com.ar/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://osmedica.com.ar/tipo-de-prestador/estudio/#breadcrumb"
+              },
+              "inLanguage": "es"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/estudio/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada",
+                  "item": "https://osmedica.com.ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Estudios o prácticas"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://osmedica.com.ar/#website",
+              "url": "https://osmedica.com.ar/",
+              "name": "OSMEDICA",
+              "description": "La obra social de los médicos",
+              "publisher": {
+                "@id": "https://osmedica.com.ar/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://osmedica.com.ar/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://osmedica.com.ar/#organization",
+              "name": "OSMEDICA",
+              "url": "https://osmedica.com.ar/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/",
+                "url": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "contentUrl": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "width": 600,
+                "height": 119,
+                "caption": "OSMEDICA"
+              },
+              "image": {
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador/448",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/taxonomies/tipo_de_prestador"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/cartilla?tipo_de_prestador=448"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 449,
+      "count": 139,
+      "description": "",
+      "link": "https://osmedica.com.ar/tipo-de-prestador/farmacia/",
+      "name": "Farmacias",
+      "slug": "farmacia",
+      "taxonomy": "tipo_de_prestador",
+      "parent": 0,
+      "meta": [],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.0 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Farmacias archivos - OSMEDICA</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Farmacias archivos - OSMEDICA\" />\n<meta property=\"og:url\" content=\"https://osmedica.com.ar/tipo-de-prestador/farmacia/\" />\n<meta property=\"og:site_name\" content=\"OSMEDICA\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/farmacia/\",\"url\":\"https://osmedica.com.ar/tipo-de-prestador/farmacia/\",\"name\":\"Farmacias archivos - OSMEDICA\",\"isPartOf\":{\"@id\":\"https://osmedica.com.ar/#website\"},\"breadcrumb\":{\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/farmacia/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/farmacia/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://osmedica.com.ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Farmacias\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://osmedica.com.ar/#website\",\"url\":\"https://osmedica.com.ar/\",\"name\":\"OSMEDICA\",\"description\":\"La obra social de los médicos\",\"publisher\":{\"@id\":\"https://osmedica.com.ar/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://osmedica.com.ar/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://osmedica.com.ar/#organization\",\"name\":\"OSMEDICA\",\"url\":\"https://osmedica.com.ar/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\",\"url\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"contentUrl\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"width\":600,\"height\":119,\"caption\":\"OSMEDICA\"},\"image\":{\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Farmacias archivos - OSMEDICA",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "es_ES",
+        "og_type": "article",
+        "og_title": "Farmacias archivos - OSMEDICA",
+        "og_url": "https://osmedica.com.ar/tipo-de-prestador/farmacia/",
+        "og_site_name": "OSMEDICA",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/farmacia/",
+              "url": "https://osmedica.com.ar/tipo-de-prestador/farmacia/",
+              "name": "Farmacias archivos - OSMEDICA",
+              "isPartOf": {
+                "@id": "https://osmedica.com.ar/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://osmedica.com.ar/tipo-de-prestador/farmacia/#breadcrumb"
+              },
+              "inLanguage": "es"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/farmacia/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada",
+                  "item": "https://osmedica.com.ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Farmacias"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://osmedica.com.ar/#website",
+              "url": "https://osmedica.com.ar/",
+              "name": "OSMEDICA",
+              "description": "La obra social de los médicos",
+              "publisher": {
+                "@id": "https://osmedica.com.ar/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://osmedica.com.ar/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://osmedica.com.ar/#organization",
+              "name": "OSMEDICA",
+              "url": "https://osmedica.com.ar/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/",
+                "url": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "contentUrl": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "width": 600,
+                "height": 119,
+                "caption": "OSMEDICA"
+              },
+              "image": {
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador/449",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/taxonomies/tipo_de_prestador"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/cartilla?tipo_de_prestador=449"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 451,
+      "count": 46,
+      "description": "",
+      "link": "https://osmedica.com.ar/tipo-de-prestador/guardia-medica/",
+      "name": "Guardia Médica",
+      "slug": "guardia-medica",
+      "taxonomy": "tipo_de_prestador",
+      "parent": 0,
+      "meta": [],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.0 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Guardia Médica archivos - OSMEDICA</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Guardia Médica archivos - OSMEDICA\" />\n<meta property=\"og:url\" content=\"https://osmedica.com.ar/tipo-de-prestador/urgencias/\" />\n<meta property=\"og:site_name\" content=\"OSMEDICA\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/urgencias/\",\"url\":\"https://osmedica.com.ar/tipo-de-prestador/urgencias/\",\"name\":\"Guardia Médica archivos - OSMEDICA\",\"isPartOf\":{\"@id\":\"https://osmedica.com.ar/#website\"},\"breadcrumb\":{\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/urgencias/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/urgencias/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://osmedica.com.ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Urgencias\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://osmedica.com.ar/#website\",\"url\":\"https://osmedica.com.ar/\",\"name\":\"OSMEDICA\",\"description\":\"La obra social de los médicos\",\"publisher\":{\"@id\":\"https://osmedica.com.ar/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://osmedica.com.ar/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://osmedica.com.ar/#organization\",\"name\":\"OSMEDICA\",\"url\":\"https://osmedica.com.ar/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\",\"url\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"contentUrl\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"width\":600,\"height\":119,\"caption\":\"OSMEDICA\"},\"image\":{\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Guardia Médica archivos - OSMEDICA",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "es_ES",
+        "og_type": "article",
+        "og_title": "Guardia Médica archivos - OSMEDICA",
+        "og_url": "https://osmedica.com.ar/tipo-de-prestador/urgencias/",
+        "og_site_name": "OSMEDICA",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/urgencias/",
+              "url": "https://osmedica.com.ar/tipo-de-prestador/urgencias/",
+              "name": "Guardia Médica archivos - OSMEDICA",
+              "isPartOf": {
+                "@id": "https://osmedica.com.ar/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://osmedica.com.ar/tipo-de-prestador/urgencias/#breadcrumb"
+              },
+              "inLanguage": "es"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/urgencias/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada",
+                  "item": "https://osmedica.com.ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Urgencias"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://osmedica.com.ar/#website",
+              "url": "https://osmedica.com.ar/",
+              "name": "OSMEDICA",
+              "description": "La obra social de los médicos",
+              "publisher": {
+                "@id": "https://osmedica.com.ar/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://osmedica.com.ar/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://osmedica.com.ar/#organization",
+              "name": "OSMEDICA",
+              "url": "https://osmedica.com.ar/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/",
+                "url": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "contentUrl": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "width": 600,
+                "height": 119,
+                "caption": "OSMEDICA"
+              },
+              "image": {
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador/451",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/taxonomies/tipo_de_prestador"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/cartilla?tipo_de_prestador=451"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 556,
+      "count": 6,
+      "description": "",
+      "link": "https://osmedica.com.ar/tipo-de-prestador/guardia-odontologica/",
+      "name": "Guardia Odontológica",
+      "slug": "guardia-odontologica",
+      "taxonomy": "tipo_de_prestador",
+      "parent": 0,
+      "meta": [],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.0 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Guardia Odontológica archivos - OSMEDICA</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Guardia Odontológica archivos - OSMEDICA\" />\n<meta property=\"og:url\" content=\"https://osmedica.com.ar/tipo-de-prestador/guardia-odontologica/\" />\n<meta property=\"og:site_name\" content=\"OSMEDICA\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/guardia-odontologica/\",\"url\":\"https://osmedica.com.ar/tipo-de-prestador/guardia-odontologica/\",\"name\":\"Guardia Odontológica archivos - OSMEDICA\",\"isPartOf\":{\"@id\":\"https://osmedica.com.ar/#website\"},\"breadcrumb\":{\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/guardia-odontologica/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/guardia-odontologica/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://osmedica.com.ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Guardia Odontológica\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://osmedica.com.ar/#website\",\"url\":\"https://osmedica.com.ar/\",\"name\":\"OSMEDICA\",\"description\":\"La obra social de los médicos\",\"publisher\":{\"@id\":\"https://osmedica.com.ar/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://osmedica.com.ar/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://osmedica.com.ar/#organization\",\"name\":\"OSMEDICA\",\"url\":\"https://osmedica.com.ar/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\",\"url\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"contentUrl\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"width\":600,\"height\":119,\"caption\":\"OSMEDICA\"},\"image\":{\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Guardia Odontológica archivos - OSMEDICA",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "es_ES",
+        "og_type": "article",
+        "og_title": "Guardia Odontológica archivos - OSMEDICA",
+        "og_url": "https://osmedica.com.ar/tipo-de-prestador/guardia-odontologica/",
+        "og_site_name": "OSMEDICA",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/guardia-odontologica/",
+              "url": "https://osmedica.com.ar/tipo-de-prestador/guardia-odontologica/",
+              "name": "Guardia Odontológica archivos - OSMEDICA",
+              "isPartOf": {
+                "@id": "https://osmedica.com.ar/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://osmedica.com.ar/tipo-de-prestador/guardia-odontologica/#breadcrumb"
+              },
+              "inLanguage": "es"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/guardia-odontologica/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada",
+                  "item": "https://osmedica.com.ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Guardia Odontológica"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://osmedica.com.ar/#website",
+              "url": "https://osmedica.com.ar/",
+              "name": "OSMEDICA",
+              "description": "La obra social de los médicos",
+              "publisher": {
+                "@id": "https://osmedica.com.ar/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://osmedica.com.ar/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://osmedica.com.ar/#organization",
+              "name": "OSMEDICA",
+              "url": "https://osmedica.com.ar/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/",
+                "url": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "contentUrl": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "width": 600,
+                "height": 119,
+                "caption": "OSMEDICA"
+              },
+              "image": {
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador/556",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/taxonomies/tipo_de_prestador"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/cartilla?tipo_de_prestador=556"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 558,
+      "count": 3,
+      "description": "",
+      "link": "https://osmedica.com.ar/tipo-de-prestador/guardia-psiquiatrica/",
+      "name": "Guardia Psiquiátrica",
+      "slug": "guardia-psiquiatrica",
+      "taxonomy": "tipo_de_prestador",
+      "parent": 0,
+      "meta": [],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.0 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Guardia Psiquiátrica archivos - OSMEDICA</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Guardia Psiquiátrica archivos - OSMEDICA\" />\n<meta property=\"og:url\" content=\"https://osmedica.com.ar/tipo-de-prestador/guardia-psiquiatrica/\" />\n<meta property=\"og:site_name\" content=\"OSMEDICA\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/guardia-psiquiatrica/\",\"url\":\"https://osmedica.com.ar/tipo-de-prestador/guardia-psiquiatrica/\",\"name\":\"Guardia Psiquiátrica archivos - OSMEDICA\",\"isPartOf\":{\"@id\":\"https://osmedica.com.ar/#website\"},\"breadcrumb\":{\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/guardia-psiquiatrica/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/guardia-psiquiatrica/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://osmedica.com.ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Guardia Psiquiátrica\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://osmedica.com.ar/#website\",\"url\":\"https://osmedica.com.ar/\",\"name\":\"OSMEDICA\",\"description\":\"La obra social de los médicos\",\"publisher\":{\"@id\":\"https://osmedica.com.ar/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://osmedica.com.ar/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://osmedica.com.ar/#organization\",\"name\":\"OSMEDICA\",\"url\":\"https://osmedica.com.ar/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\",\"url\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"contentUrl\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"width\":600,\"height\":119,\"caption\":\"OSMEDICA\"},\"image\":{\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Guardia Psiquiátrica archivos - OSMEDICA",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "es_ES",
+        "og_type": "article",
+        "og_title": "Guardia Psiquiátrica archivos - OSMEDICA",
+        "og_url": "https://osmedica.com.ar/tipo-de-prestador/guardia-psiquiatrica/",
+        "og_site_name": "OSMEDICA",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/guardia-psiquiatrica/",
+              "url": "https://osmedica.com.ar/tipo-de-prestador/guardia-psiquiatrica/",
+              "name": "Guardia Psiquiátrica archivos - OSMEDICA",
+              "isPartOf": {
+                "@id": "https://osmedica.com.ar/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://osmedica.com.ar/tipo-de-prestador/guardia-psiquiatrica/#breadcrumb"
+              },
+              "inLanguage": "es"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/guardia-psiquiatrica/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada",
+                  "item": "https://osmedica.com.ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Guardia Psiquiátrica"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://osmedica.com.ar/#website",
+              "url": "https://osmedica.com.ar/",
+              "name": "OSMEDICA",
+              "description": "La obra social de los médicos",
+              "publisher": {
+                "@id": "https://osmedica.com.ar/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://osmedica.com.ar/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://osmedica.com.ar/#organization",
+              "name": "OSMEDICA",
+              "url": "https://osmedica.com.ar/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/",
+                "url": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "contentUrl": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "width": 600,
+                "height": 119,
+                "caption": "OSMEDICA"
+              },
+              "image": {
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador/558",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/taxonomies/tipo_de_prestador"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/cartilla?tipo_de_prestador=558"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 564,
+      "count": 58,
+      "description": "",
+      "link": "https://osmedica.com.ar/tipo-de-prestador/odontologia/",
+      "name": "Odontología",
+      "slug": "odontologia",
+      "taxonomy": "tipo_de_prestador",
+      "parent": 0,
+      "meta": [],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.0 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Odontología archivos - OSMEDICA</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Odontología archivos - OSMEDICA\" />\n<meta property=\"og:url\" content=\"https://osmedica.com.ar/tipo-de-prestador/odontologia/\" />\n<meta property=\"og:site_name\" content=\"OSMEDICA\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/odontologia/\",\"url\":\"https://osmedica.com.ar/tipo-de-prestador/odontologia/\",\"name\":\"Odontología archivos - OSMEDICA\",\"isPartOf\":{\"@id\":\"https://osmedica.com.ar/#website\"},\"breadcrumb\":{\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/odontologia/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/odontologia/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://osmedica.com.ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Odontología\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://osmedica.com.ar/#website\",\"url\":\"https://osmedica.com.ar/\",\"name\":\"OSMEDICA\",\"description\":\"La obra social de los médicos\",\"publisher\":{\"@id\":\"https://osmedica.com.ar/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://osmedica.com.ar/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://osmedica.com.ar/#organization\",\"name\":\"OSMEDICA\",\"url\":\"https://osmedica.com.ar/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\",\"url\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"contentUrl\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"width\":600,\"height\":119,\"caption\":\"OSMEDICA\"},\"image\":{\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Odontología archivos - OSMEDICA",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "es_ES",
+        "og_type": "article",
+        "og_title": "Odontología archivos - OSMEDICA",
+        "og_url": "https://osmedica.com.ar/tipo-de-prestador/odontologia/",
+        "og_site_name": "OSMEDICA",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/odontologia/",
+              "url": "https://osmedica.com.ar/tipo-de-prestador/odontologia/",
+              "name": "Odontología archivos - OSMEDICA",
+              "isPartOf": {
+                "@id": "https://osmedica.com.ar/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://osmedica.com.ar/tipo-de-prestador/odontologia/#breadcrumb"
+              },
+              "inLanguage": "es"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/odontologia/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada",
+                  "item": "https://osmedica.com.ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Odontología"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://osmedica.com.ar/#website",
+              "url": "https://osmedica.com.ar/",
+              "name": "OSMEDICA",
+              "description": "La obra social de los médicos",
+              "publisher": {
+                "@id": "https://osmedica.com.ar/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://osmedica.com.ar/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://osmedica.com.ar/#organization",
+              "name": "OSMEDICA",
+              "url": "https://osmedica.com.ar/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/",
+                "url": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "contentUrl": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "width": 600,
+                "height": 119,
+                "caption": "OSMEDICA"
+              },
+              "image": {
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador/564",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/taxonomies/tipo_de_prestador"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/cartilla?tipo_de_prestador=564"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 450,
+      "count": 108,
+      "description": "",
+      "link": "https://osmedica.com.ar/tipo-de-prestador/optica/",
+      "name": "Ópticas",
+      "slug": "optica",
+      "taxonomy": "tipo_de_prestador",
+      "parent": 0,
+      "meta": [],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.0 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Ópticas archivos - OSMEDICA</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Ópticas archivos - OSMEDICA\" />\n<meta property=\"og:url\" content=\"https://osmedica.com.ar/tipo-de-prestador/optica/\" />\n<meta property=\"og:site_name\" content=\"OSMEDICA\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/optica/\",\"url\":\"https://osmedica.com.ar/tipo-de-prestador/optica/\",\"name\":\"Ópticas archivos - OSMEDICA\",\"isPartOf\":{\"@id\":\"https://osmedica.com.ar/#website\"},\"breadcrumb\":{\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/optica/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/optica/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://osmedica.com.ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Ópticas\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://osmedica.com.ar/#website\",\"url\":\"https://osmedica.com.ar/\",\"name\":\"OSMEDICA\",\"description\":\"La obra social de los médicos\",\"publisher\":{\"@id\":\"https://osmedica.com.ar/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://osmedica.com.ar/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://osmedica.com.ar/#organization\",\"name\":\"OSMEDICA\",\"url\":\"https://osmedica.com.ar/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\",\"url\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"contentUrl\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"width\":600,\"height\":119,\"caption\":\"OSMEDICA\"},\"image\":{\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Ópticas archivos - OSMEDICA",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "es_ES",
+        "og_type": "article",
+        "og_title": "Ópticas archivos - OSMEDICA",
+        "og_url": "https://osmedica.com.ar/tipo-de-prestador/optica/",
+        "og_site_name": "OSMEDICA",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/optica/",
+              "url": "https://osmedica.com.ar/tipo-de-prestador/optica/",
+              "name": "Ópticas archivos - OSMEDICA",
+              "isPartOf": {
+                "@id": "https://osmedica.com.ar/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://osmedica.com.ar/tipo-de-prestador/optica/#breadcrumb"
+              },
+              "inLanguage": "es"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/optica/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada",
+                  "item": "https://osmedica.com.ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Ópticas"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://osmedica.com.ar/#website",
+              "url": "https://osmedica.com.ar/",
+              "name": "OSMEDICA",
+              "description": "La obra social de los médicos",
+              "publisher": {
+                "@id": "https://osmedica.com.ar/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://osmedica.com.ar/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://osmedica.com.ar/#organization",
+              "name": "OSMEDICA",
+              "url": "https://osmedica.com.ar/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/",
+                "url": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "contentUrl": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "width": 600,
+                "height": 119,
+                "caption": "OSMEDICA"
+              },
+              "image": {
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador/450",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/taxonomies/tipo_de_prestador"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/cartilla?tipo_de_prestador=450"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 555,
+      "count": 50,
+      "description": "",
+      "link": "https://osmedica.com.ar/tipo-de-prestador/profesionales/",
+      "name": "Profesionales",
+      "slug": "profesionales",
+      "taxonomy": "tipo_de_prestador",
+      "parent": 0,
+      "meta": [],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.0 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Profesionales archivos - OSMEDICA</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Profesionales archivos - OSMEDICA\" />\n<meta property=\"og:url\" content=\"https://osmedica.com.ar/tipo-de-prestador/profesionales/\" />\n<meta property=\"og:site_name\" content=\"OSMEDICA\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/profesionales/\",\"url\":\"https://osmedica.com.ar/tipo-de-prestador/profesionales/\",\"name\":\"Profesionales archivos - OSMEDICA\",\"isPartOf\":{\"@id\":\"https://osmedica.com.ar/#website\"},\"breadcrumb\":{\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/profesionales/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/profesionales/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://osmedica.com.ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Profesionales\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://osmedica.com.ar/#website\",\"url\":\"https://osmedica.com.ar/\",\"name\":\"OSMEDICA\",\"description\":\"La obra social de los médicos\",\"publisher\":{\"@id\":\"https://osmedica.com.ar/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://osmedica.com.ar/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://osmedica.com.ar/#organization\",\"name\":\"OSMEDICA\",\"url\":\"https://osmedica.com.ar/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\",\"url\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"contentUrl\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"width\":600,\"height\":119,\"caption\":\"OSMEDICA\"},\"image\":{\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Profesionales archivos - OSMEDICA",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "es_ES",
+        "og_type": "article",
+        "og_title": "Profesionales archivos - OSMEDICA",
+        "og_url": "https://osmedica.com.ar/tipo-de-prestador/profesionales/",
+        "og_site_name": "OSMEDICA",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/profesionales/",
+              "url": "https://osmedica.com.ar/tipo-de-prestador/profesionales/",
+              "name": "Profesionales archivos - OSMEDICA",
+              "isPartOf": {
+                "@id": "https://osmedica.com.ar/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://osmedica.com.ar/tipo-de-prestador/profesionales/#breadcrumb"
+              },
+              "inLanguage": "es"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/profesionales/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada",
+                  "item": "https://osmedica.com.ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Profesionales"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://osmedica.com.ar/#website",
+              "url": "https://osmedica.com.ar/",
+              "name": "OSMEDICA",
+              "description": "La obra social de los médicos",
+              "publisher": {
+                "@id": "https://osmedica.com.ar/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://osmedica.com.ar/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://osmedica.com.ar/#organization",
+              "name": "OSMEDICA",
+              "url": "https://osmedica.com.ar/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/",
+                "url": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "contentUrl": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "width": 600,
+                "height": 119,
+                "caption": "OSMEDICA"
+              },
+              "image": {
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador/555",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/taxonomies/tipo_de_prestador"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/cartilla?tipo_de_prestador=555"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    {
+      "id": 568,
+      "count": 2,
+      "description": "",
+      "link": "https://osmedica.com.ar/tipo-de-prestador/urgencias/",
+      "name": "Urgencias",
+      "slug": "urgencias",
+      "taxonomy": "tipo_de_prestador",
+      "parent": 0,
+      "meta": [],
+      "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v27.0 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Urgencias archivos - OSMEDICA</title>\n<meta name=\"robots\" content=\"noindex, follow\" />\n<meta property=\"og:locale\" content=\"es_ES\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Urgencias archivos - OSMEDICA\" />\n<meta property=\"og:url\" content=\"https://osmedica.com.ar/tipo-de-prestador/urgencias/\" />\n<meta property=\"og:site_name\" content=\"OSMEDICA\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/urgencias/\",\"url\":\"https://osmedica.com.ar/tipo-de-prestador/urgencias/\",\"name\":\"Urgencias archivos - OSMEDICA\",\"isPartOf\":{\"@id\":\"https://osmedica.com.ar/#website\"},\"breadcrumb\":{\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/urgencias/#breadcrumb\"},\"inLanguage\":\"es\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://osmedica.com.ar/tipo-de-prestador/urgencias/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Portada\",\"item\":\"https://osmedica.com.ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Urgencias\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://osmedica.com.ar/#website\",\"url\":\"https://osmedica.com.ar/\",\"name\":\"OSMEDICA\",\"description\":\"La obra social de los médicos\",\"publisher\":{\"@id\":\"https://osmedica.com.ar/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https://osmedica.com.ar/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"es\"},{\"@type\":\"Organization\",\"@id\":\"https://osmedica.com.ar/#organization\",\"name\":\"OSMEDICA\",\"url\":\"https://osmedica.com.ar/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"es\",\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\",\"url\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"contentUrl\":\"https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png\",\"width\":600,\"height\":119,\"caption\":\"OSMEDICA\"},\"image\":{\"@id\":\"https://osmedica.com.ar/#/schema/logo/image/\"}}]}</script>\n<!-- / Yoast SEO plugin. -->",
+      "yoast_head_json": {
+        "title": "Urgencias archivos - OSMEDICA",
+        "robots": {
+          "index": "noindex",
+          "follow": "follow"
+        },
+        "og_locale": "es_ES",
+        "og_type": "article",
+        "og_title": "Urgencias archivos - OSMEDICA",
+        "og_url": "https://osmedica.com.ar/tipo-de-prestador/urgencias/",
+        "og_site_name": "OSMEDICA",
+        "twitter_card": "summary_large_image",
+        "schema": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "CollectionPage",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/urgencias/",
+              "url": "https://osmedica.com.ar/tipo-de-prestador/urgencias/",
+              "name": "Urgencias archivos - OSMEDICA",
+              "isPartOf": {
+                "@id": "https://osmedica.com.ar/#website"
+              },
+              "breadcrumb": {
+                "@id": "https://osmedica.com.ar/tipo-de-prestador/urgencias/#breadcrumb"
+              },
+              "inLanguage": "es"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://osmedica.com.ar/tipo-de-prestador/urgencias/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Portada",
+                  "item": "https://osmedica.com.ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Urgencias"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://osmedica.com.ar/#website",
+              "url": "https://osmedica.com.ar/",
+              "name": "OSMEDICA",
+              "description": "La obra social de los médicos",
+              "publisher": {
+                "@id": "https://osmedica.com.ar/#organization"
+              },
+              "potentialAction": [
+                {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://osmedica.com.ar/?s={search_term_string}"
+                  },
+                  "query-input": {
+                    "@type": "PropertyValueSpecification",
+                    "valueRequired": true,
+                    "valueName": "search_term_string"
+                  }
+                }
+              ],
+              "inLanguage": "es"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://osmedica.com.ar/#organization",
+              "name": "OSMEDICA",
+              "url": "https://osmedica.com.ar/",
+              "logo": {
+                "@type": "ImageObject",
+                "inLanguage": "es",
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/",
+                "url": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "contentUrl": "https://osmedica.com.ar/wp-content/uploads/2024/03/osmedica-logo-web-hq-nobg.png",
+                "width": 600,
+                "height": 119,
+                "caption": "OSMEDICA"
+              },
+              "image": {
+                "@id": "https://osmedica.com.ar/#/schema/logo/image/"
+              }
+            }
+          ]
+        }
+      },
+      "_links": {
+        "self": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador/568",
+            "targetHints": {
+              "allow": [
+                "GET"
+              ]
+            }
+          }
+        ],
+        "collection": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/tipo_de_prestador"
+          }
+        ],
+        "about": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/taxonomies/tipo_de_prestador"
+          }
+        ],
+        "wp:post_type": [
+          {
+            "href": "https://osmedica.com.ar/wp-json/wp/v2/cartilla?tipo_de_prestador=568"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    }
+  ]
+}

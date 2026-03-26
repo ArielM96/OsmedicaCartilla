@@ -1,0 +1,25 @@
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Node
+node_modules/
+dist/
+build/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Data exports too large or temporary
+tmp/

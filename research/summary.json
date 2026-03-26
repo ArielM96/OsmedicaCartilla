@@ -1,0 +1,760 @@
+{
+  "counts": {
+    "tipo_de_prestador": 11,
+    "provincia": 126,
+    "especialidades": 151,
+    "estudios": 234,
+    "cartilla": 538
+  },
+  "tipo_prestador": [
+    {
+      "id": 559,
+      "name": "Centros de Diálisis",
+      "slug": "centro-de-dialisis",
+      "count": 46
+    },
+    {
+      "id": 447,
+      "name": "Centros, Clínicas y Sanatorios",
+      "slug": "especialidad",
+      "count": 139
+    },
+    {
+      "id": 448,
+      "name": "Estudios o prácticas",
+      "slug": "estudio",
+      "count": 110
+    },
+    {
+      "id": 449,
+      "name": "Farmacias",
+      "slug": "farmacia",
+      "count": 139
+    },
+    {
+      "id": 451,
+      "name": "Guardia Médica",
+      "slug": "guardia-medica",
+      "count": 46
+    },
+    {
+      "id": 556,
+      "name": "Guardia Odontológica",
+      "slug": "guardia-odontologica",
+      "count": 6
+    },
+    {
+      "id": 558,
+      "name": "Guardia Psiquiátrica",
+      "slug": "guardia-psiquiatrica",
+      "count": 3
+    },
+    {
+      "id": 564,
+      "name": "Odontología",
+      "slug": "odontologia",
+      "count": 58
+    },
+    {
+      "id": 450,
+      "name": "Ópticas",
+      "slug": "optica",
+      "count": 108
+    },
+    {
+      "id": 555,
+      "name": "Profesionales",
+      "slug": "profesionales",
+      "count": 50
+    },
+    {
+      "id": 568,
+      "name": "Urgencias",
+      "slug": "urgencias",
+      "count": 2
+    }
+  ],
+  "top_level_zonas": [
+    {
+      "id": 224,
+      "name": "Buenos Aires",
+      "slug": "buenos-aires",
+      "count": 1
+    },
+    {
+      "id": 29,
+      "name": "Capital Federal",
+      "slug": "capital-federal",
+      "count": 199
+    },
+    {
+      "id": 44,
+      "name": "GBA Zona Norte",
+      "slug": "gba-zona-norte",
+      "count": 106
+    },
+    {
+      "id": 38,
+      "name": "GBA Zona Oeste",
+      "slug": "gba-zona-oeste",
+      "count": 111
+    },
+    {
+      "id": 84,
+      "name": "GBA Zona Sur",
+      "slug": "gba-zona-sur",
+      "count": 123
+    },
+    {
+      "id": 547,
+      "name": "Villa de Mayo",
+      "slug": "villa-de-mayo",
+      "count": 1
+    }
+  ],
+  "sample_cartilla": [
+    {
+      "id": 6546,
+      "slug": "dra-leslie-rosmarino",
+      "nombre": "Dra. Leslie Rosmarino",
+      "url": "https://osmedica.com.ar/cartilla/dra-leslie-rosmarino/",
+      "tipo_prestador": [
+        "Odontología"
+      ],
+      "especialidades": [
+        "Odontología General"
+      ],
+      "estudios": [],
+      "zonas": [
+        {
+          "id": 84,
+          "nombre": "GBA Zona Sur",
+          "slug": "gba-zona-sur"
+        }
+      ],
+      "localidades": [
+        {
+          "id": 85,
+          "nombre": "Quilmes",
+          "slug": "quilmes",
+          "parent": 84
+        }
+      ],
+      "class_list": [
+        "post-6546",
+        "cartilla",
+        "type-cartilla",
+        "status-publish",
+        "hentry",
+        "especialidades-odontologia-general",
+        "provincia-gba-zona-sur",
+        "provincia-quilmes",
+        "tipo_de_prestador-odontologia"
+      ],
+      "modified": "2026-03-20T08:56:20"
+    },
+    {
+      "id": 6545,
+      "slug": "lieb-dental",
+      "nombre": "Lieb Dental",
+      "url": "https://osmedica.com.ar/cartilla/lieb-dental/",
+      "tipo_prestador": [
+        "Centros, Clínicas y Sanatorios"
+      ],
+      "especialidades": [
+        "Odontología General"
+      ],
+      "estudios": [],
+      "zonas": [
+        {
+          "id": 44,
+          "nombre": "GBA Zona Norte",
+          "slug": "gba-zona-norte"
+        }
+      ],
+      "localidades": [
+        {
+          "id": 156,
+          "nombre": "Villa Ballester",
+          "slug": "villa-ballester",
+          "parent": 44
+        }
+      ],
+      "class_list": [
+        "post-6545",
+        "cartilla",
+        "type-cartilla",
+        "status-publish",
+        "hentry",
+        "especialidades-odontologia-general",
+        "provincia-gba-zona-norte",
+        "provincia-villa-ballester",
+        "tipo_de_prestador-especialidad"
+      ],
+      "modified": "2026-03-20T08:54:37"
+    },
+    {
+      "id": 6530,
+      "slug": "centro-medico-liniers",
+      "nombre": "Centro Médico Liniers &#8211; Centro Propio de OSMEDICA",
+      "url": "https://osmedica.com.ar/cartilla/centro-medico-liniers/",
+      "tipo_prestador": [
+        "Centros, Clínicas y Sanatorios",
+        "Estudios o prácticas",
+        "Odontología"
+      ],
+      "especialidades": [
+        "Cardiología",
+        "Clínica médica",
+        "Dermatología",
+        "Diabetología",
+        "Nefrología",
+        "Nutrición",
+        "Odontología General",
+        "Odontopediatría",
+        "Ortodoncia",
+        "Pediatría",
+        "Psicología",
+        "Reumatología",
+        "Traumatologia",
+        "Urología"
+      ],
+      "estudios": [
+        "Ecocardiograma",
+        "Ecodoppler",
+        "Ecodoppler color cardiaco",
+        "Ecografía",
+        "Holter",
+        "Presurometría"
+      ],
+      "zonas": [
+        {
+          "id": 29,
+          "nombre": "Capital Federal",
+          "slug": "capital-federal"
+        }
+      ],
+      "localidades": [
+        {
+          "id": 416,
+          "nombre": "Liniers",
+          "slug": "liniers",
+          "parent": 29
+        }
+      ],
+      "class_list": [
+        "post-6530",
+        "cartilla",
+        "type-cartilla",
+        "status-publish",
+        "hentry",
+        "especialidades-cardiologia",
+        "especialidades-clinica-medica",
+        "especialidades-dermatologia",
+        "especialidades-diabetologia",
+        "especialidades-nefrologia",
+        "especialidades-nutricion",
+        "especialidades-odontologia-general",
+        "especialidades-odontopediatria",
+        "especialidades-ortodoncia",
+        "especialidades-pediatria",
+        "especialidades-psicologia",
+        "especialidades-reumatologia",
+        "especialidades-traumatologia",
+        "especialidades-urologia",
+        "estudios-ecocardiograma",
+        "estudios-ecodoppler",
+        "estudios-ecodoppler-color-cardiaco",
+        "estudios-ecografia",
+        "estudios-holter",
+        "estudios-presurometria",
+        "provincia-capital-federal",
+        "provincia-liniers",
+        "tipo_de_prestador-especialidad",
+        "tipo_de_prestador-estudio",
+        "tipo_de_prestador-odontologia"
+      ],
+      "modified": "2026-03-17T12:35:32"
+    },
+    {
+      "id": 6470,
+      "slug": "clinica-comave-urgencias-psiquiatricas",
+      "nombre": "Clínica COMAVE – urgencias psiquiátricas",
+      "url": "https://osmedica.com.ar/cartilla/clinica-comave-urgencias-psiquiatricas/",
+      "tipo_prestador": [
+        "Guardia Psiquiátrica",
+        "Urgencias"
+      ],
+      "especialidades": [],
+      "estudios": [],
+      "zonas": [
+        {
+          "id": 84,
+          "nombre": "GBA Zona Sur",
+          "slug": "gba-zona-sur"
+        }
+      ],
+      "localidades": [
+        {
+          "id": 154,
+          "nombre": "Avellaneda",
+          "slug": "avellaneda",
+          "parent": 84
+        }
+      ],
+      "class_list": [
+        "post-6470",
+        "cartilla",
+        "type-cartilla",
+        "status-publish",
+        "hentry",
+        "provincia-avellaneda",
+        "provincia-gba-zona-sur",
+        "tipo_de_prestador-guardia-psiquiatrica",
+        "tipo_de_prestador-urgencias"
+      ],
+      "modified": "2026-02-26T11:34:07"
+    },
+    {
+      "id": 6467,
+      "slug": "clinica-comave-guardia-psiquiatrica",
+      "nombre": "Clínica COMAVE &#8211; guardia psiquiátrica",
+      "url": "https://osmedica.com.ar/cartilla/clinica-comave-guardia-psiquiatrica/",
+      "tipo_prestador": [
+        "Centros, Clínicas y Sanatorios",
+        "Guardia Psiquiátrica"
+      ],
+      "especialidades": [],
+      "estudios": [],
+      "zonas": [
+        {
+          "id": 84,
+          "nombre": "GBA Zona Sur",
+          "slug": "gba-zona-sur"
+        }
+      ],
+      "localidades": [
+        {
+          "id": 154,
+          "nombre": "Avellaneda",
+          "slug": "avellaneda",
+          "parent": 84
+        }
+      ],
+      "class_list": [
+        "post-6467",
+        "cartilla",
+        "type-cartilla",
+        "status-publish",
+        "hentry",
+        "provincia-avellaneda",
+        "provincia-gba-zona-sur",
+        "tipo_de_prestador-especialidad",
+        "tipo_de_prestador-guardia-psiquiatrica"
+      ],
+      "modified": "2026-02-26T11:22:45"
+    },
+    {
+      "id": 6465,
+      "slug": "consultorios-medicos-nuestra-sra-de-guadalupe-bernal-oeste-quilmes",
+      "nombre": "Consultorios Médicos Nuestra Sra. De Guadalupe &#8211; Bernal Oeste, Quilmes",
+      "url": "https://osmedica.com.ar/cartilla/consultorios-medicos-nuestra-sra-de-guadalupe-bernal-oeste-quilmes/",
+      "tipo_prestador": [
+        "Centros, Clínicas y Sanatorios",
+        "Estudios o prácticas"
+      ],
+      "especialidades": [
+        "Anatomía Patológica",
+        "Anatomia patológica",
+        "Cardiología",
+        "Cardiología infantil",
+        "Cirugía general",
+        "Clínica médica",
+        "Dermatología",
+        "Dermatología pediátrica",
+        "Gastroenterología",
+        "Gastroenterología infantil",
+        "Ginecología",
+        "Ginecología infantil",
+        "Nutrición",
+        "Nutrición infantil",
+        "Obstetricia",
+        "Otorrinolaringología",
+        "Otorrinolaringología infantil",
+        "Pediatría",
+        "Traumatologia",
+        "Traumatología infantil",
+        "Urología"
+      ],
+      "estudios": [
+        "Ecografía",
+        "Electrocardiograma (ECG)",
+        "MAPA",
+        "Pap",
+        "Presurometría"
+      ],
+      "zonas": [
+        {
+          "id": 84,
+          "nombre": "GBA Zona Sur",
+          "slug": "gba-zona-sur"
+        }
+      ],
+      "localidades": [
+        {
+          "id": 115,
+          "nombre": "Bernal Oeste",
+          "slug": "bernal-oeste",
+          "parent": 84
+        }
+      ],
+      "class_list": [
+        "post-6465",
+        "cartilla",
+        "type-cartilla",
+        "status-publish",
+        "hentry",
+        "especialidades-anatomia-patologica-2",
+        "especialidades-anatomia-patologica",
+        "especialidades-cardiologia",
+        "especialidades-cardiologia-infantil",
+        "especialidades-cirugia-general",
+        "especialidades-clinica-medica",
+        "especialidades-dermatologia",
+        "especialidades-dermatologia-pediatrica",
+        "especialidades-gastroenterologia",
+        "especialidades-gastroenterologia-infantil",
+        "especialidades-ginecologia",
+        "especialidades-ginecologia-infantil",
+        "especialidades-nutricion",
+        "especialidades-nutricion-infantil",
+        "especialidades-obstetricia",
+        "especialidades-otorrinolaringologia",
+        "especialidades-otorrinolaringologia-infantil",
+        "especialidades-pediatria",
+        "especialidades-traumatologia",
+        "especialidades-traumatologia-infantil",
+        "especialidades-urologia",
+        "estudios-ecografia",
+        "estudios-electrocardiograma-ecg",
+        "estudios-mapa",
+        "estudios-pap",
+        "estudios-presurometria",
+        "provincia-bernal-oeste",
+        "provincia-gba-zona-sur",
+        "tipo_de_prestador-especialidad",
+        "tipo_de_prestador-estudio"
+      ],
+      "modified": "2026-02-20T11:14:56"
+    },
+    {
+      "id": 6464,
+      "slug": "consultorios-clinica-dulce-espera-sarandi-avellaneda",
+      "nombre": "Consultorios Clínica Dulce Espera &#8211; Sarandí Avellaneda",
+      "url": "https://osmedica.com.ar/cartilla/consultorios-clinica-dulce-espera-sarandi-avellaneda/",
+      "tipo_prestador": [
+        "Centros, Clínicas y Sanatorios",
+        "Estudios o prácticas"
+      ],
+      "especialidades": [
+        "Anatomía Patológica",
+        "Cardiología",
+        "Cardiología infantil",
+        "Cirugía de cabeza y cuello",
+        "Cirugía general",
+        "Clínica médica",
+        "Coloproctología",
+        "Dermatología",
+        "Dermatología pediátrica",
+        "Endocrinología infantil",
+        "Flebología",
+        "Gastroenterología",
+        "Gastroenterología infantil",
+        "Ginecología",
+        "Neurología",
+        "Neurología infantil",
+        "Nutrición",
+        "Nutrición infantil",
+        "Obstetricia",
+        "Otorrinolaringología",
+        "Otorrinolaringología infantil",
+        "Pediatría",
+        "Traumatología y Ortopedia",
+        "Traumatología y ortopedia infantil",
+        "Urología",
+        "Urología infantil"
+      ],
+      "estudios": [
+        "Colposcopia",
+        "Doppler",
+        "Ecocardiograma",
+        "Ecografía",
+        "EEC",
+        "EEG de sueño",
+        "Electrocardiograma (ECG)",
+        "MAPA",
+        "Otoemisiones Acústicas (OEA)",
+        "Pap",
+        "Presurometría"
+      ],
+      "zonas": [
+        {
+          "id": 84,
+          "nombre": "GBA Zona Sur",
+          "slug": "gba-zona-sur"
+        }
+      ],
+      "localidades": [
+        {
+          "id": 94,
+          "nombre": "Sarandí",
+          "slug": "sarandi",
+          "parent": 84
+        }
+      ],
+      "class_list": [
+        "post-6464",
+        "cartilla",
+        "type-cartilla",
+        "status-publish",
+        "hentry",
+        "especialidades-anatomia-patologica-2",
+        "especialidades-cardiologia",
+        "especialidades-cardiologia-infantil",
+        "especialidades-cirugia-de-cabeza-y-cuello",
+        "especialidades-cirugia-general",
+        "especialidades-clinica-medica",
+        "especialidades-coloproctologia",
+        "especialidades-dermatologia",
+        "especialidades-dermatologia-pediatrica",
+        "especialidades-endocrinologia-infantil",
+        "especialidades-flebologia",
+        "especialidades-gastroenterologia",
+        "especialidades-gastroenterologia-infantil",
+        "especialidades-ginecologia",
+        "especialidades-neurologia",
+        "especialidades-neurologia-infantil",
+        "especialidades-nutricion",
+        "especialidades-nutricion-infantil",
+        "especialidades-obstetricia",
+        "especialidades-otorrinolaringologia",
+        "especialidades-otorrinolaringologia-infantil",
+        "especialidades-pediatria",
+        "especialidades-traumatologia-y-ortopedia",
+        "especialidades-traumatologia-y-ortopedia-infantil",
+        "especialidades-urologia",
+        "especialidades-urologia-infantil",
+        "estudios-colposcopia",
+        "estudios-doppler",
+        "estudios-ecocardiograma",
+        "estudios-ecografia",
+        "estudios-eec",
+        "estudios-eeg-de-sueno",
+        "estudios-electrocardiograma-ecg",
+        "estudios-mapa",
+        "estudios-otoemisiones-acusticas-oea",
+        "estudios-pap",
+        "estudios-presurometria",
+        "provincia-gba-zona-sur",
+        "provincia-sarandi",
+        "tipo_de_prestador-especialidad",
+        "tipo_de_prestador-estudio"
+      ],
+      "modified": "2026-02-20T11:14:37"
+    },
+    {
+      "id": 6463,
+      "slug": "consultorios-externos-sanatorio-san-juan",
+      "nombre": "Consultorios Externos &#8211; Sanatorio San Juan",
+      "url": "https://osmedica.com.ar/cartilla/consultorios-externos-sanatorio-san-juan/",
+      "tipo_prestador": [
+        "Centros, Clínicas y Sanatorios",
+        "Estudios o prácticas"
+      ],
+      "especialidades": [
+        "Anatomía Patológica",
+        "Cardiología",
+        "Cardiología infantil",
+        "Cirugía de cabeza y cuello",
+        "Clínica médica",
+        "Coloproctología",
+        "Gastroenterología",
+        "Gastroenterología infantil",
+        "Ginecología",
+        "Neumonologìa",
+        "Neumonología infantil",
+        "Neurología",
+        "Nutrición",
+        "Nutrición infantil",
+        "Obstetricia",
+        "Otorrinolaringología",
+        "Otorrinolaringología infantil",
+        "Pediatría",
+        "Traumatologia",
+        "Traumatología y Ortopedia",
+        "Traumatología y ortopedia infantil",
+        "Urología",
+        "Urología infantil"
+      ],
+      "estudios": [
+        "Colposcopia",
+        "Doppler",
+        "Ecocardiograma",
+        "Ecografía",
+        "EEG de sueño",
+        "Electrocardiograma (ECG)",
+        "Espirometría",
+        "Laboratorio de análisis clínicos",
+        "monitoreo fetal",
+        "Otoemisiones Acústicas (OEA)",
+        "Pap",
+        "Radiología"
+      ],
+      "zonas": [
+        {
+          "id": 224,
+          "nombre": "Buenos Aires",
+          "slug": "buenos-aires"
+        }
+      ],
+      "localidades": [
+        {
+          "id": 141,
+          "nombre": "Lanús",
+          "slug": "lanus",
+          "parent": 84
+        }
+      ],
+      "class_list": [
+        "post-6463",
+        "cartilla",
+        "type-cartilla",
+        "status-publish",
+        "hentry",
+        "especialidades-anatomia-patologica-2",
+        "especialidades-cardiologia",
+        "especialidades-cardiologia-infantil",
+        "especialidades-cirugia-de-cabeza-y-cuello",
+        "especialidades-clinica-medica",
+        "especialidades-coloproctologia",
+        "especialidades-gastroenterologia",
+        "especialidades-gastroenterologia-infantil",
+        "especialidades-ginecologia",
+        "especialidades-neumonologia",
+        "especialidades-neumonologia-infantil",
+        "especialidades-neurologia",
+        "especialidades-nutricion",
+        "especialidades-nutricion-infantil",
+        "especialidades-obstetricia",
+        "especialidades-otorrinolaringologia",
+        "especialidades-otorrinolaringologia-infantil",
+        "especialidades-pediatria",
+        "especialidades-traumatologia",
+        "especialidades-traumatologia-y-ortopedia",
+        "especialidades-traumatologia-y-ortopedia-infantil",
+        "especialidades-urologia",
+        "especialidades-urologia-infantil",
+        "estudios-colposcopia",
+        "estudios-doppler",
+        "estudios-ecocardiograma",
+        "estudios-ecografia",
+        "estudios-eeg-de-sueno",
+        "estudios-electrocardiograma-ecg",
+        "estudios-espirometria",
+        "estudios-laboratorio-de-analisis-clinicos",
+        "estudios-monitoreo-fetal",
+        "estudios-otoemisiones-acusticas-oea",
+        "estudios-pap",
+        "estudios-radiologia",
+        "provincia-buenos-aires",
+        "provincia-lanus",
+        "tipo_de_prestador-especialidad",
+        "tipo_de_prestador-estudio"
+      ],
+      "modified": "2026-02-20T11:13:29"
+    },
+    {
+      "id": 6441,
+      "slug": "nefra-lomas-2",
+      "nombre": "Nefra Lomas",
+      "url": "https://osmedica.com.ar/cartilla/nefra-lomas-2/",
+      "tipo_prestador": [
+        "Centros de Diálisis"
+      ],
+      "especialidades": [],
+      "estudios": [],
+      "zonas": [
+        {
+          "id": 84,
+          "nombre": "GBA Zona Sur",
+          "slug": "gba-zona-sur"
+        }
+      ],
+      "localidades": [
+        {
+          "id": 567,
+          "nombre": "Banfield",
+          "slug": "banfield",
+          "parent": 84
+        }
+      ],
+      "class_list": [
+        "post-6441",
+        "cartilla",
+        "type-cartilla",
+        "status-publish",
+        "hentry",
+        "provincia-banfield",
+        "provincia-gba-zona-sur",
+        "tipo_de_prestador-centro-de-dialisis"
+      ],
+      "modified": "2026-02-12T09:35:59"
+    },
+    {
+      "id": 6268,
+      "slug": "bernal-consultorio",
+      "nombre": "Bernal Consultorio",
+      "url": "https://osmedica.com.ar/cartilla/bernal-consultorio/",
+      "tipo_prestador": [
+        "Centros, Clínicas y Sanatorios",
+        "Odontología"
+      ],
+      "especialidades": [
+        "Cirugía Odontológica",
+        "Odontología General",
+        "Prótesis dentales"
+      ],
+      "estudios": [],
+      "zonas": [
+        {
+          "id": 84,
+          "nombre": "GBA Zona Sur",
+          "slug": "gba-zona-sur"
+        }
+      ],
+      "localidades": [
+        {
+          "id": 277,
+          "nombre": "Bernal Este",
+          "slug": "bernal-este",
+          "parent": 84
+        }
+      ],
+      "class_list": [
+        "post-6268",
+        "cartilla",
+        "type-cartilla",
+        "status-publish",
+        "hentry",
+        "especialidades-cirugia-odontologica",
+        "especialidades-odontologia-general",
+        "especialidades-protesis",
+        "provincia-bernal-este",
+        "provincia-gba-zona-sur",
+        "tipo_de_prestador-especialidad",
+        "tipo_de_prestador-odontologia"
+      ],
+      "modified": "2025-11-20T09:29:56"
+    }
+  ]
+}
