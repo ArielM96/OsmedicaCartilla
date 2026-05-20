@@ -1,0 +1,6 @@
+# Sincronización diaria de la cartilla OSMEDICA (REST + listado FacetWP vía discover.py).
+# Instalar: sudo cp deploy/osmedica-cartilla-sync.cron /etc/cron.d/osmedica-cartilla-sync
+#           sudo chmod 644 /etc/cron.d/osmedica-cartilla-sync
+SHELL=/bin/bash
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+15 4 * * * root /opt/dash/OsmedicaCartilla/scripts/sync_cartilla.sh

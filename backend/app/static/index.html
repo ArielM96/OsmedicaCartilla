@@ -1,0 +1,1420 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cartilla OSMEDICA</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="shortcut icon" href="/favicon.svg">
+  <style>
+    :root {
+      --bg: #043942;
+      --bg-panel: rgba(3, 56, 66, 0.7);
+      --bg-panel-strong: rgba(2, 42, 49, 0.88);
+      --ink: #f3ffff;
+      --muted: #c6e4e8;
+      --line: rgba(183, 227, 230, 0.16);
+      --brand: #0e798c;
+      --brand-strong: #006272;
+      --brand-soft: rgba(14, 121, 140, 0.2);
+      --accent: #30c1d8;
+      --shadow: 0 28px 70px rgba(1, 24, 28, 0.34);
+      --radius-xl: 26px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --maxw: 1680px;
+      --font: "IBM Plex Sans", "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font);
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(48, 193, 216, 0.32), transparent 28%),
+        radial-gradient(circle at 85% 18%, rgba(86, 219, 214, 0.18), transparent 20%),
+        radial-gradient(circle at bottom right, rgba(14, 121, 140, 0.28), transparent 25%),
+        linear-gradient(180deg, #04424d 0%, #045360 34%, #056575 66%, #0e798c 100%);
+      min-height: 100vh;
+    }
+
+    .capture-stage {
+      position: relative;
+      min-height: 100vh;
+    }
+
+    .shell {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 26px 18px 36px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 20px;
+      align-items: stretch;
+      margin-bottom: 20px;
+    }
+
+    .hero-card,
+    .stats-card,
+    .filters,
+    .results,
+    .detail {
+      background: var(--bg-panel);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: var(--shadow);
+    }
+
+    body.capture-mode {
+      background:
+        radial-gradient(circle at top left, rgba(48, 193, 216, 0.42), transparent 24%),
+        radial-gradient(circle at 85% 18%, rgba(107, 228, 219, 0.26), transparent 18%),
+        radial-gradient(circle at bottom right, rgba(14, 121, 140, 0.4), transparent 22%),
+        linear-gradient(180deg, #04454f 0%, #055968 36%, #0a7182 70%, #1492a5 100%);
+    }
+
+    body.capture-mode .hero-card,
+    body.capture-mode .stats-card,
+    body.capture-mode .filters,
+    body.capture-mode .results,
+    body.capture-mode .detail {
+      background: rgba(2, 53, 62, 0.96);
+      backdrop-filter: none;
+      border-color: rgba(255, 255, 255, 0.18);
+      box-shadow: 0 22px 56px rgba(1, 24, 28, 0.42);
+    }
+
+    body.capture-mode .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(198, 228, 232, 0.18);
+    }
+
+    body.capture-mode .chip {
+      background: rgba(14, 121, 140, 0.28);
+    }
+
+    body.capture-mode input,
+    body.capture-mode select,
+    body.capture-mode .ghost,
+    body.capture-mode .status-pill {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .hero-card {
+      padding: 28px;
+      border-radius: var(--radius-xl);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: #dbd5ff;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 16px 0 10px;
+      font-size: clamp(2rem, 3.8vw, 3.8rem);
+      line-height: 0.96;
+      letter-spacing: -0.04em;
+    }
+
+    .lead {
+      margin: 0 0 18px;
+      max-width: 60ch;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .hero-search {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    input,
+    select,
+    button {
+      font: inherit;
+    }
+
+    input,
+    select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 13px 14px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--ink);
+      outline: none;
+      transition: border-color 120ms ease, transform 120ms ease;
+    }
+
+    select option {
+      color: #101228;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: rgba(95, 214, 255, 0.65);
+      transform: translateY(-1px);
+    }
+
+    input::placeholder {
+      color: rgba(243, 240, 255, 0.58);
+    }
+
+    button {
+      border: 0;
+      border-radius: 14px;
+      padding: 13px 18px;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--brand) 55%, var(--brand-strong) 100%);
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 120ms ease, opacity 120ms ease;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+    }
+
+    .ghost {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--ink);
+      border: 1px solid var(--line);
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .stats-card {
+      border-radius: var(--radius-xl);
+      padding: 26px;
+      display: grid;
+      gap: 16px;
+      align-content: start;
+    }
+
+    .stat {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .stat:last-child {
+      border-bottom: 0;
+    }
+
+    .stat-value {
+      display: block;
+      font-size: 1.9rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .stat-label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.96rem;
+      margin-top: 4px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 340px minmax(0, 1.35fr) 390px;
+      gap: 20px;
+    }
+
+    .filters,
+    .results,
+    .detail {
+      border-radius: var(--radius-xl);
+      padding: 22px;
+      min-height: 420px;
+    }
+
+    .section-title {
+      margin: 0 0 14px;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .filter-group {
+      margin-bottom: 14px;
+    }
+
+    .filter-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .results-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .results-head h2,
+    .detail h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      letter-spacing: -0.03em;
+    }
+
+    .caption {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .list {
+      display: grid;
+      gap: 12px;
+      max-height: 920px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .card {
+      padding: 16px;
+      border-radius: var(--radius-lg);
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(219, 213, 255, 0.12);
+      cursor: pointer;
+      transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease;
+    }
+
+    .card:hover,
+    .card.active {
+      transform: translateY(-1px);
+      border-color: rgba(95, 214, 255, 0.4);
+      box-shadow: 0 14px 36px rgba(8, 14, 41, 0.35);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      background: rgba(127, 108, 255, 0.16);
+      color: #e3ddff;
+    }
+
+    .chip-emoji {
+      font-size: 1rem;
+      line-height: 1;
+    }
+
+    .detail-empty,
+    .empty,
+    .loading {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .detail-block {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .detail-block:first-of-type {
+      margin-top: 12px;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .detail-block h3 {
+      margin: 0 0 10px;
+      font-size: 0.96rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .detail-link {
+      color: #8fdfff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .detail-summary {
+      cursor: pointer;
+      border-radius: 18px;
+      padding: 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+    }
+
+    .detail-summary:hover {
+      transform: translateY(-1px);
+      border-color: rgba(143, 223, 255, 0.38);
+      background: rgba(255, 255, 255, 0.07);
+    }
+
+    .detail-hint {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .modal-root {
+      position: fixed;
+      inset: 0;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 28px;
+      z-index: 9999;
+    }
+
+    .modal-root.open {
+      display: flex;
+    }
+
+    .modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(4, 31, 36, 0.45);
+      backdrop-filter: blur(10px);
+    }
+
+    .modal-capture-bg {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      pointer-events: none;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: blur(16px) saturate(0.9) brightness(0.72);
+      transform: scale(1.06);
+    }
+
+    .modal-card {
+      position: relative;
+      z-index: 1;
+      width: min(760px, 100%);
+      max-height: min(88vh, 920px);
+      overflow: auto;
+      border-radius: 28px;
+      padding: 28px;
+      background:
+        radial-gradient(circle at top left, rgba(48, 193, 216, 0.22), transparent 24%),
+        linear-gradient(180deg, rgba(5, 88, 100, 0.98) 0%, rgba(2, 54, 62, 0.98) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: 0 30px 80px rgba(1, 24, 28, 0.45);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      padding: 0;
+      font-size: 1.2rem;
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .modal-header {
+      padding-right: 56px;
+    }
+
+    .modal-title {
+      margin: 8px 0 8px;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 0.95;
+      letter-spacing: -0.05em;
+    }
+
+    .modal-subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .modal-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .modal-panel {
+      border-radius: 22px;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .modal-section-title {
+      margin: 0 0 12px;
+      font-size: 0.92rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #b5edf4;
+    }
+
+    .modal-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .modal-note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    body.capture-mode.capture-focus-modal .shell {
+      visibility: hidden;
+    }
+
+    body.capture-mode.capture-focus-modal .modal-backdrop {
+      background: rgba(4, 31, 36, 0.18);
+      backdrop-filter: none;
+    }
+
+    body.capture-mode.capture-focus-modal #modal-copy-button {
+      visibility: hidden;
+    }
+
+    body.capture-mode.capture-focus-modal .modal-capture-note {
+      visibility: hidden;
+    }
+
+    body.capture-mode.capture-focus-modal .modal-capture-bg {
+      opacity: 1;
+    }
+
+    body.capture-mode.capture-focus-modal .modal-root {
+      padding: 0;
+    }
+
+    body.capture-mode.capture-focus-modal .modal-card {
+      max-height: none;
+      overflow: visible;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+
+    .pagination .controls {
+      display: flex;
+      gap: 8px;
+    }
+
+    @media (max-width: 1100px) {
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .list {
+        max-height: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .shell {
+        padding: 14px 10px 20px;
+      }
+
+      .hero-card,
+      .stats-card,
+      .filters,
+      .results,
+      .detail {
+        padding: 16px;
+        border-radius: 18px;
+      }
+
+      .hero-search,
+      .filter-actions {
+        grid-template-columns: 1fr;
+      }
+
+      .pagination {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .modal-root {
+        padding: 12px;
+      }
+
+      .modal-card {
+        padding: 18px;
+        border-radius: 22px;
+      }
+
+      .modal-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="capture-stage" class="capture-stage">
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-card">
+        <span class="eyebrow">Cartilla OSMEDICA</span>
+        <h1>Buscá prestadores sin perderte en menús eternos.</h1>
+        <p class="lead">
+          Navegá por región, localidad, especialidad o tipo de prestador desde una vista única.
+          La información sale de la cartilla pública normalizada y está lista para explorar.
+        </p>
+        <form id="search-form" class="hero-search">
+          <input id="search-input" type="search" placeholder="Ej: cardiología, Quilmes, guardia médica">
+          <button type="submit">Buscar</button>
+        </form>
+        <div class="hero-actions">
+          <button id="copy-screenshot" type="button" class="ghost">📸 Copiar captura</button>
+          <span id="copy-status" class="status-pill">Lista para capturar filtros y resultados</span>
+        </div>
+      </div>
+      <aside class="stats-card">
+        <div class="stat">
+          <span id="stat-total" class="stat-value">...</span>
+          <span class="stat-label">prestadores en cartilla</span>
+        </div>
+        <div class="stat">
+          <span id="stat-regiones" class="stat-value">...</span>
+          <span class="stat-label">regiones disponibles</span>
+        </div>
+        <div class="stat">
+          <span id="stat-especialidades" class="stat-value">...</span>
+          <span class="stat-label">especialidades registradas</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <aside class="filters">
+        <p class="section-title">Filtros</p>
+        <div class="filter-group">
+          <label for="tipo-select">Tipo de prestador</label>
+          <select id="tipo-select">
+            <option value="">Todos</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="especialidad-select">Especialidad</label>
+          <select id="especialidad-select">
+            <option value="">Todas</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="region-select">Región</label>
+          <select id="region-select">
+            <option value="">Todas</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="localidad-select">Localidad</label>
+          <select id="localidad-select">
+            <option value="">Todas</option>
+          </select>
+        </div>
+        <div class="filter-actions">
+          <button id="apply-filters" type="button">Aplicar</button>
+          <button id="clear-filters" type="button" class="ghost">Limpiar</button>
+        </div>
+      </aside>
+
+      <section class="results">
+        <div class="results-head">
+          <div>
+            <p class="section-title">Resultados</p>
+            <h2 id="results-title">Cargando cartilla...</h2>
+          </div>
+          <span id="results-meta" class="caption"></span>
+        </div>
+        <div id="results-list" class="list">
+          <p class="loading">Cargando resultados...</p>
+        </div>
+        <div class="pagination">
+          <span id="pagination-info" class="caption"></span>
+          <div class="controls">
+            <button id="prev-page" type="button" class="ghost">Anterior</button>
+            <button id="next-page" type="button">Siguiente</button>
+          </div>
+        </div>
+      </section>
+
+      <aside class="detail">
+        <p class="section-title">Detalle</p>
+        <div id="detail-panel" class="detail-empty">
+          Seleccioná un prestador para ver especialidades, ubicación y vínculo directo con la ficha original.
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <div id="detail-modal" class="modal-root" aria-hidden="true">
+    <div id="modal-capture-bg" class="modal-capture-bg"></div>
+    <div class="modal-backdrop" data-close-modal="true"></div>
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button id="modal-close" type="button" class="modal-close ghost" aria-label="Cerrar detalle">✕</button>
+      <div id="modal-content"></div>
+    </section>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script>
+    const state = {
+      page: 1,
+      limit: 18,
+      q: "",
+      tipoPrestador: "",
+      especialidad: "",
+      region: "",
+      localidad: "",
+      selectedId: null,
+      selectedSlug: null
+    };
+
+    let selectedDetail = null;
+
+    function normalizeForEmoji(text = "") {
+      return String(text)
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "");
+    }
+
+    const emojiMap = [
+      { match: ["estudios o practica"], emoji: "📋" },
+      { match: ["optica", "lentes"], emoji: "👓" },
+      { match: ["oftalm"], emoji: "👁️" },
+
+      { match: ["patologia mamaria"], emoji: "🎀" },
+      { match: ["anatomia patolog", "anatomia patologica"], emoji: "🔬" },
+      { match: ["atencion integral de la diabetes", "diabetologia"], emoji: "🩸" },
+      { match: ["audiologia", "especialistas en acufeno"], emoji: "👂" },
+      { match: ["clinica medica", "demanda espontanea en clinica medica"], emoji: "👨‍⚕️" },
+      { match: ["coloproctologia", "proctologia"], emoji: "🚽" },
+      { match: ["curaciones", "practicas de enfermeria"], emoji: "🩹" },
+      { match: ["diagnostico por imagenes"], emoji: "🖼️" },
+      { match: ["fertilidad asistida"], emoji: "👶" },
+      { match: ["rehabilitacion del lenguaje"], emoji: "🗣️" },
+      { match: ["fisiatria", "rehabilitacion"], emoji: "🦾" },
+      { match: ["flebologia"], emoji: "🦵" },
+      { match: ["genetica medica"], emoji: "🧬" },
+      { match: ["hemodialisis y dialisis peritoneal"], emoji: "🏥" },
+      { match: ["hemoterapia"], emoji: "💉" },
+      { match: ["hepatologia pediatrica"], emoji: "👶" },
+      { match: ["hepatologia"], emoji: "🧼" },
+      { match: ["implantes", "ortodoncia", "periodoncia", "protesis"], emoji: "🦷" },
+      { match: ["infectologia"], emoji: "🦠" },
+      { match: ["internacion utia", "internacion uco"], emoji: "🫀" },
+      { match: ["internacion obstetrica", "partos y cesareas"], emoji: "🤰" },
+      { match: ["internacion neonatologica"], emoji: "🍼" },
+      { match: ["internacion adultos de baja"], emoji: "🛌" },
+      { match: ["internacion en sala general"], emoji: "🏥" },
+      { match: ["internacion pediatrica"], emoji: "🧒" },
+      { match: ["internacion clinica baja", "internacion quirurgica baja"], emoji: "🏥" },
+      { match: ["terapia intensiva adultos", "terapia intensiva neonatologica"], emoji: "🚨" },
+      { match: ["internacion adultos", "internacion"], emoji: "🛌" },
+      { match: ["interrupcion voluntaria", "ive"], emoji: "💜" },
+      { match: ["laringologia"], emoji: "🗣️" },
+      { match: ["mediana y alta complejidad"], emoji: "⚡" },
+      { match: ["oncologia"], emoji: "🎗️" },
+      { match: ["quemado"], emoji: "🔥" },
+      { match: ["reumatologia"], emoji: "🦴" },
+      { match: ["sala de procedimientos"], emoji: "🩹" },
+      { match: ["diabetes"], emoji: "🩸" },
+      { match: ["hematologia"], emoji: "🩸" },
+      { match: ["neonatologia"], emoji: "👶" },
+      { match: ["radioterapia"], emoji: "☢️" },
+
+      { match: ["barrido total"], emoji: "☢️" },
+      { match: ["pool vascular", "vias linfaticas", "bazo / renal bilateral"], emoji: "🧪" },
+      { match: ["centellograma perfusion"], emoji: "🫁" },
+      { match: ["centellograma de cerebro"], emoji: "🧠" },
+      { match: ["centellograma de tiroides"], emoji: "🦋" },
+      { match: ["centellograma oseo"], emoji: "🦴" },
+      { match: ["camara gamma"], emoji: "🌈" },
+      { match: ["pet corporal", "pet con fluor", "tomografia por emision"], emoji: "💠" },
+      { match: ["spect card", "gated spect", "spect cardiaco"], emoji: "🫀" },
+      { match: ["ecc con doppler cardiaco", "ecc con doppler"], emoji: "🫀" },
+      { match: ["alta complejidad"], emoji: "⚛️" },
+      { match: ["medicina nuclear", "centellogram", "scintig", "spect paratiroideo", "spect oseo", "spect cerebral"], emoji: "☢️" },
+
+      { match: ["audicion y voz"], emoji: "🧪" },
+      { match: ["acufenometria", "acufeno"], emoji: "🦻" },
+      { match: ["logoaudiometria", "impedaciometria", "impedanciometria"], emoji: "📉" },
+      { match: ["audiometria"], emoji: "📉" },
+      { match: ["otoemision", "seleccion y adaptacion de otoampl"], emoji: "🔊" },
+      { match: ["timpanogram", "lavado de oido"], emoji: "👂" },
+
+      { match: ["ecg c/", "ecg c /"], emoji: "💓" },
+      { match: ["ecg"], emoji: "💓" },
+      { match: ["ergometria", "test de caminata"], emoji: "🏃" },
+      { match: ["holter", "mapa", "presurometria"], emoji: "⌚" },
+      { match: ["eco stress", "ecostress", "tilt test"], emoji: "🩺" },
+      { match: ["angiografia"], emoji: "🩸" },
+
+      { match: ["doppler", "ecodoppler", "ecodople"], emoji: "🔴" },
+      { match: ["venoso y vasos"], emoji: "🔴" },
+      { match: ["radiologia odontologica"], emoji: "🦷" },
+      { match: ["radiologia"], emoji: "🖼️" },
+      { match: ["radiorreno"], emoji: "☢️" },
+      { match: ["ecograf"], emoji: "🌊" },
+      { match: ["rx magnif", "densitometria", "radiografia"], emoji: "🦴" },
+      { match: [" rmn", "rmn "], emoji: "🌀" },
+      { match: ["rmn"], emoji: "🌀" },
+      { match: ["urotomografia", "tac helicoidal", "tomografia computada", "angio tac"], emoji: "🍩" },
+      { match: ["tomografia"], emoji: "🍩" },
+      { match: ["mamografia", "tecnica eklund", "tecnicas eklund", "magnificacion"], emoji: "🎀" },
+
+      { match: ["citologi", "pap"], emoji: "🧪" },
+      { match: ["puncion", "punci"], emoji: "💉" },
+      { match: ["escision", "electrocoagul"], emoji: "🔪" },
+      { match: ["espirometria", "estudios funcionales respiratorios"], emoji: "🫁" },
+      { match: ["fibrobronco", "rinofibro", "nasofibro"], emoji: "🔭" },
+      { match: ["oximetria"], emoji: "🌬️" },
+      { match: ["test del aire", "test de aire", "helicobacter", "hidrogeno"], emoji: "🧪" },
+      { match: ["manometria", "phmetria", "ph de 24"], emoji: "📉" },
+      { match: ["videocolonoscop"], emoji: "🎥" },
+      { match: ["uroflujometria", "estudio urodin", "urodiagnost"], emoji: "💧" },
+      { match: ["penescopia"], emoji: "🍆" },
+      { match: ["vulvoscop", "colposcopia"], emoji: "🌸" },
+      { match: ["mapeo cerebral"], emoji: "🧠" },
+      { match: ["eeg de sueño", "potenciales evocados"], emoji: "😴" },
+      { match: ["electroencef", "eeg"], emoji: "⚡" },
+      { match: ["electromiogram", " emg", "emg "], emoji: "💪" },
+      { match: ["reeducacion global postural", " rpg"], emoji: "🧘" },
+      { match: ["colocacion de medicacion", "colocacion de siu", "colocacion y extracion", "extracion de diu"], emoji: "💊" },
+      { match: ["apto fisico", "riesgo quirurg"], emoji: "🏥" },
+      { match: ["practicas urolog", "practicas audiolog"], emoji: "📋" },
+      { match: ["puncion con guia ecograf"], emoji: "💉" },
+      { match: ["scan fetal"], emoji: "👶" },
+      { match: ["monitoreo fetal"], emoji: "👶" },
+      { match: ["motilidad digestiva"], emoji: "🍕" },
+      { match: ["marcaciones prequirurg"], emoji: "📍" },
+      { match: ["pruebas supralimin"], emoji: "📋" },
+      { match: ["flujometria"], emoji: "🌊" },
+      { match: ["estudio dinamico renal"], emoji: "💧" },
+      { match: ["control de presion"], emoji: "🩺" },
+      { match: ["curacion de heridas"], emoji: "🩹" },
+      { match: ["testificacion total"], emoji: "📋" },
+      { match: ["topicacion"], emoji: "🖌️" },
+      { match: ["tratamiento del dolor"], emoji: "💊" },
+      { match: ["biopsi"], emoji: "🧪" },
+
+      { match: ["cardio", "corazon"], emoji: "❤️" },
+      { match: ["alerg"], emoji: "🤧" },
+      { match: ["infantil", "pediatr"], emoji: "🧒" },
+      { match: ["guardia"], emoji: "🚑" },
+      { match: ["farmac", "droguer", "botica"], emoji: "💊" },
+      { match: ["odont", "dental"], emoji: "🦷" },
+      { match: ["nutri"], emoji: "🥗" },
+      { match: ["trauma", "ortoped"], emoji: "🦴" },
+      { match: ["dermat"], emoji: "🧴" },
+      { match: ["gine"], emoji: "🌷" },
+      { match: ["obste"], emoji: "🤰" },
+      { match: ["urolog"], emoji: "💧" },
+      { match: ["nefro"], emoji: "🫗" },
+      { match: ["neuro"], emoji: "🧠" },
+      { match: ["otorr"], emoji: "👂" },
+      { match: ["fonoa"], emoji: "🗣️" },
+      { match: ["kinesi"], emoji: "🏃" },
+      { match: ["psico", "psiqu"], emoji: "🫶" },
+      { match: ["neumo"], emoji: "🫁" },
+      { match: ["gastro"], emoji: "🫃" },
+      { match: ["endo"], emoji: "🧬" },
+      { match: ["cirugia", "cirug"], emoji: "🏥" },
+      { match: ["laboratorio", "analisis"], emoji: "🧪" },
+      { match: ["quilmes"], emoji: "📍" },
+      { match: ["sanatorio", "clinica", "centro"], emoji: "🏨" },
+      { match: ["profesional"], emoji: "🩺" },
+      { match: ["urgencia"], emoji: "⚡" },
+      { match: ["resonancia"], emoji: "🌀" },
+      { match: ["ecografia"], emoji: "🌊" },
+      { match: ["vision"], emoji: "👁️" },
+      { match: ["audio"], emoji: "👂" }
+    ];
+    function emojiFor(nombre = "") {
+      const value = normalizeForEmoji(nombre);
+      if (/\b(dr\.|dra\.)/.test(value)) {
+        return "🧑‍⚕️";
+      }
+      const trimmed = value.trim();
+      if (trimmed === "eec" || trimmed === "ecc") {
+        return "🧠";
+      }
+      if (trimmed === "lec") {
+        return "⚡";
+      }
+      if (trimmed === "pap") {
+        return "🧪";
+      }
+      if (trimmed === "spect") {
+        return "⚛️";
+      }
+      if (trimmed === "renal" || trimmed === "pancreatica" || trimmed === "suprarrenal") {
+        return "🔬";
+      }
+      const found = emojiMap.find((entry) => entry.match.some((token) => value.includes(token)));
+      return found ? found.emoji : "✨";
+    }
+    function withEmoji(nombre = "") {
+      return `${emojiFor(nombre)} ${nombre}`;
+    }
+
+    const els = {
+      searchForm: document.getElementById("search-form"),
+      searchInput: document.getElementById("search-input"),
+      tipoSelect: document.getElementById("tipo-select"),
+      especialidadSelect: document.getElementById("especialidad-select"),
+      regionSelect: document.getElementById("region-select"),
+      localidadSelect: document.getElementById("localidad-select"),
+      applyFilters: document.getElementById("apply-filters"),
+      clearFilters: document.getElementById("clear-filters"),
+      resultsTitle: document.getElementById("results-title"),
+      resultsMeta: document.getElementById("results-meta"),
+      resultsList: document.getElementById("results-list"),
+      detailPanel: document.getElementById("detail-panel"),
+      paginationInfo: document.getElementById("pagination-info"),
+      prevPage: document.getElementById("prev-page"),
+      nextPage: document.getElementById("next-page"),
+      statTotal: document.getElementById("stat-total"),
+      statRegiones: document.getElementById("stat-regiones"),
+      statEspecialidades: document.getElementById("stat-especialidades"),
+      copyScreenshot: document.getElementById("copy-screenshot"),
+      copyStatus: document.getElementById("copy-status"),
+      shell: document.querySelector(".shell"),
+      grid: document.querySelector(".grid"),
+      captureStage: document.getElementById("capture-stage"),
+      modalRoot: document.getElementById("detail-modal"),
+      modalCaptureBg: document.getElementById("modal-capture-bg"),
+      modalContent: document.getElementById("modal-content"),
+      modalClose: document.getElementById("modal-close")
+    };
+
+    function formatNumber(value) {
+      return new Intl.NumberFormat("es-AR").format(value);
+    }
+
+    function setCopyStatus(message) {
+      els.copyStatus.textContent = message;
+    }
+
+    function fillSelect(select, items, defaultLabel) {
+      const currentValue = select.value;
+      select.innerHTML = "";
+      const baseOption = document.createElement("option");
+      baseOption.value = "";
+      baseOption.textContent = defaultLabel;
+      select.appendChild(baseOption);
+
+      items.forEach((item) => {
+        const option = document.createElement("option");
+        option.value = item.slug;
+        option.textContent = withEmoji(item.nombre);
+        select.appendChild(option);
+      });
+
+      if ([...select.options].some((option) => option.value === currentValue)) {
+        select.value = currentValue;
+      }
+    }
+
+    async function fetchJson(path) {
+      const response = await fetch(path);
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+      return response.json();
+    }
+
+    async function loadCatalogs() {
+      const [tipos, especialidades, regiones] = await Promise.all([
+        fetchJson("/api/v1/catalogos/tipos-prestador"),
+        fetchJson("/api/v1/catalogos/especialidades"),
+        fetchJson("/api/v1/catalogos/regiones")
+      ]);
+
+      fillSelect(els.tipoSelect, tipos, "Todos");
+      fillSelect(els.especialidadSelect, especialidades, "Todas");
+      fillSelect(els.regionSelect, regiones, "Todas");
+
+      els.statRegiones.textContent = formatNumber(regiones.length);
+      els.statEspecialidades.textContent = formatNumber(especialidades.length);
+    }
+
+    async function loadLocalidades(regionSlug) {
+      if (!regionSlug) {
+        fillSelect(els.localidadSelect, [], "Todas");
+        return;
+      }
+      const localidades = await fetchJson(`/api/v1/catalogos/localidades?region=${encodeURIComponent(regionSlug)}`);
+      fillSelect(els.localidadSelect, localidades, "Todas");
+    }
+
+    function buildQuery() {
+      const params = new URLSearchParams({
+        page: String(state.page),
+        limit: String(state.limit)
+      });
+
+      if (state.q) params.set("q", state.q);
+      if (state.tipoPrestador) params.set("tipoPrestador", state.tipoPrestador);
+      if (state.especialidad) params.set("especialidad", state.especialidad);
+      if (state.region) params.set("region", state.region);
+      if (state.localidad) params.set("localidad", state.localidad);
+
+      return params.toString();
+    }
+
+    function renderChips(items) {
+      if (!items || !items.length) {
+        return '<span class="caption">Sin datos</span>';
+      }
+      return `<div class="meta">${items.map((item) => `<span class="chip"><span class="chip-emoji">${emojiFor(item.nombre)}</span>${item.nombre}</span>`).join("")}</div>`;
+    }
+
+    function renderContacto(contacto) {
+      if (!contacto) {
+        return '<p class="caption">Sin datos de contacto</p>';
+      }
+      const parts = [];
+      if (contacto.direccion) {
+        parts.push(`<p class="caption"><strong>Dirección:</strong> ${contacto.direccion}</p>`);
+      }
+      if (contacto.ubicacion) {
+        parts.push(`<p class="caption"><strong>Ubicación:</strong> ${contacto.ubicacion}</p>`);
+      }
+      if (contacto.telefonos && contacto.telefonos.length) {
+        parts.push(`<p class="caption"><strong>Teléfonos:</strong> ${contacto.telefonos.join(" · ")}</p>`);
+      }
+      if (contacto.googleMapsUrl) {
+        parts.push(`<a class="detail-link" href="${contacto.googleMapsUrl}" target="_blank" rel="noreferrer">Ver en Google Maps</a>`);
+      }
+      return parts.length ? parts.join("") : '<p class="caption">Sin datos de contacto</p>';
+    }
+
+    function detailMarkup(item, compact = false) {
+      if (compact) {
+        return `
+          <div id="detail-expand-trigger" class="detail-summary">
+            <h2>${withEmoji(item.nombre)}</h2>
+            <p class="caption">${item.regiones.map((value) => value.nombre).join(", ") || "Sin región"}${item.localidades.length ? " · " + item.localidades.map((value) => value.nombre).join(", ") : ""}</p>
+            <p class="detail-hint">Click para abrir esta ficha en un popup destacado.</p>
+          </div>
+
+          <div class="detail-block">
+            <h3>Tipo de prestador</h3>
+            ${renderChips(item.tiposPrestador)}
+          </div>
+
+          ${item.tiposGuardia && item.tiposGuardia.length ? `
+          <div class="detail-block">
+            <h3>Tipo de guardia</h3>
+            ${renderChips(item.tiposGuardia)}
+          </div>` : ""}
+
+          <div class="detail-block">
+            <h3>Especialidades</h3>
+            ${renderChips(item.especialidades)}
+          </div>
+
+          <div class="detail-block">
+            <h3>Estudios</h3>
+            ${renderChips(item.estudios)}
+          </div>
+
+          <div class="detail-block">
+            <h3>Contacto</h3>
+            ${renderContacto(item.contacto)}
+          </div>
+
+          <div class="detail-block">
+            <h3>Ficha original</h3>
+            <a class="detail-link" href="${item.source.url}" target="_blank" rel="noreferrer">Abrir ficha en OSMEDICA</a>
+            <p class="caption">Última modificación registrada: ${item.source.lastModified || "sin dato"}</p>
+          </div>
+        `;
+      }
+
+      return `
+        <div class="modal-header">
+          <p class="eyebrow">Detalle del prestador</p>
+          <h2 id="modal-title" class="modal-title">${withEmoji(item.nombre)}</h2>
+          <p class="modal-subtitle">${item.regiones.map((value) => value.nombre).join(", ") || "Sin región"}${item.localidades.length ? " · " + item.localidades.map((value) => value.nombre).join(", ") : ""}</p>
+        </div>
+
+        <div class="modal-grid">
+          <div class="modal-panel">
+            <h3 class="modal-section-title">Tipo de prestador</h3>
+            ${renderChips(item.tiposPrestador)}
+
+            <div class="detail-block">
+              <h3>Especialidades</h3>
+              ${renderChips(item.especialidades)}
+            </div>
+
+            <div class="detail-block">
+              <h3>Estudios</h3>
+              ${renderChips(item.estudios)}
+            </div>
+
+            ${item.tiposGuardia && item.tiposGuardia.length ? `
+            <div class="detail-block">
+              <h3>Tipo de guardia</h3>
+              ${renderChips(item.tiposGuardia)}
+            </div>` : ""}
+          </div>
+
+          <div class="modal-panel">
+            <h3 class="modal-section-title">Contacto</h3>
+            ${renderContacto(item.contacto)}
+
+            <h3 class="modal-section-title" style="margin-top:18px;">Ficha original</h3>
+            <a class="detail-link" href="${item.source.url}" target="_blank" rel="noreferrer">Abrir ficha en OSMEDICA</a>
+            <p class="modal-note">Última modificación registrada: ${item.source.lastModified || "sin dato"}</p>
+
+            <h3 class="modal-section-title" style="margin-top:18px;">Ubicación</h3>
+            ${renderChips(item.regiones)}
+            <div style="height:10px;"></div>
+            ${renderChips(item.localidades)}
+
+            <div class="modal-actions">
+              <button id="modal-copy-button" type="button">📸 Copiar este popup</button>
+            </div>
+            <p class="modal-note modal-capture-note">La captura prioriza esta ficha y difumina el contenido de fondo.</p>
+          </div>
+        </div>
+      `;
+    }
+
+    function openDetailModal() {
+      if (!selectedDetail) {
+        return;
+      }
+
+      els.modalContent.innerHTML = detailMarkup(selectedDetail, false);
+      els.modalRoot.classList.add("open");
+      els.modalRoot.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+
+      const modalCopyButton = document.getElementById("modal-copy-button");
+      if (modalCopyButton) {
+        modalCopyButton.addEventListener("click", async () => {
+          await copyScreenshotToClipboard();
+        });
+      }
+    }
+
+    function closeDetailModal() {
+      els.modalRoot.classList.remove("open");
+      els.modalRoot.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+    }
+
+    async function prepareModalCaptureBackground() {
+      const bgCanvas = await html2canvas(els.grid, {
+        backgroundColor: "#04454f",
+        scale: 1,
+        useCORS: true,
+        logging: false
+      });
+      els.modalCaptureBg.style.backgroundImage = `url("${bgCanvas.toDataURL("image/png")}")`;
+    }
+
+    function renderResults(items, pagination) {
+      if (!items.length) {
+        els.resultsList.innerHTML = '<p class="empty">No encontré resultados con esos filtros. Probá limpiarlos o usar una búsqueda más amplia.</p>';
+        els.paginationInfo.textContent = "Sin resultados";
+        els.prevPage.disabled = true;
+        els.nextPage.disabled = true;
+        return;
+      }
+
+      els.resultsList.innerHTML = items.map((item) => `
+        <article class="card ${item.id === state.selectedId ? "active" : ""}" data-id="${item.id}" data-slug="${item.slug}">
+          <h3>${withEmoji(item.nombre)}</h3>
+          <div class="caption">${item.regiones.map((value) => value.nombre).join(", ") || "Sin región"}${item.localidades.length ? " · " + item.localidades.map((value) => value.nombre).join(", ") : ""}</div>
+          ${renderChips(item.tiposPrestador.slice(0, 3))}
+        </article>
+      `).join("");
+
+      els.paginationInfo.textContent = `Página ${pagination.page} de ${pagination.totalPages}`;
+      els.prevPage.disabled = pagination.page <= 1;
+      els.nextPage.disabled = pagination.page >= pagination.totalPages;
+
+      els.resultsList.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("click", () => {
+          state.selectedId = Number(card.dataset.id);
+          state.selectedSlug = card.dataset.slug;
+          highlightSelected();
+          showDetail(state.selectedSlug);
+        });
+      });
+    }
+
+    function highlightSelected() {
+      els.resultsList.querySelectorAll(".card").forEach((card) => {
+        card.classList.toggle("active", Number(card.dataset.id) === state.selectedId);
+      });
+    }
+
+    async function showDetail(identifier) {
+      els.detailPanel.innerHTML = '<p class="loading">Cargando detalle...</p>';
+      try {
+        const item = await fetchJson(`/api/v1/prestadores/${encodeURIComponent(identifier)}`);
+        selectedDetail = item;
+        els.detailPanel.innerHTML = detailMarkup(item, true);
+        const trigger = document.getElementById("detail-expand-trigger");
+        if (trigger) {
+          trigger.addEventListener("click", openDetailModal);
+        }
+      } catch (error) {
+        els.detailPanel.innerHTML = '<p class="empty">No pude cargar el detalle de este prestador.</p>';
+      }
+    }
+
+    async function loadResults() {
+      els.resultsList.innerHTML = '<p class="loading">Buscando prestadores...</p>';
+      const data = await fetchJson(`/api/v1/prestadores?${buildQuery()}`);
+      els.statTotal.textContent = formatNumber(data.pagination.totalItems);
+      els.resultsTitle.textContent = data.pagination.totalItems
+        ? "Prestadores disponibles"
+        : "Sin resultados";
+      els.resultsMeta.textContent = data.pagination.totalItems
+        ? `${formatNumber(data.pagination.totalItems)} coincidencias`
+        : "Ajustá los filtros";
+
+      renderResults(data.items, data.pagination);
+
+      if (data.items.length) {
+        const shouldPickFirst = !state.selectedId || !data.items.some((item) => item.id === state.selectedId);
+        if (shouldPickFirst) {
+          state.selectedId = data.items[0].id;
+          state.selectedSlug = data.items[0].slug;
+        }
+        highlightSelected();
+        await showDetail(state.selectedSlug);
+      } else {
+        state.selectedId = null;
+        state.selectedSlug = null;
+        els.detailPanel.innerHTML = '<p class="detail-empty">No hay un prestador seleccionado.</p>';
+      }
+    }
+
+    async function copyScreenshotToClipboard() {
+      if (typeof html2canvas !== "function") {
+        setCopyStatus("No pude cargar el motor de captura");
+        return;
+      }
+
+      els.copyScreenshot.disabled = true;
+      setCopyStatus("Preparando captura...");
+
+      try {
+        document.body.classList.add("capture-mode");
+        await new Promise((resolve) => window.requestAnimationFrame(() => window.requestAnimationFrame(resolve)));
+
+        const canvas = await html2canvas(els.grid, {
+          backgroundColor: "#04454f",
+          scale: Math.max(2, window.devicePixelRatio || 1),
+          useCORS: true,
+          logging: false
+        });
+
+        let finalCanvas = canvas;
+        if (els.modalRoot.classList.contains("open")) {
+          await prepareModalCaptureBackground();
+          document.body.classList.add("capture-focus-modal");
+          await new Promise((resolve) => window.requestAnimationFrame(() => window.requestAnimationFrame(resolve)));
+
+          finalCanvas = await html2canvas(els.modalRoot, {
+            backgroundColor: null,
+            scale: Math.max(2, window.devicePixelRatio || 1),
+            useCORS: true,
+            logging: false
+          });
+        }
+
+        const blob = await new Promise((resolve) => finalCanvas.toBlob(resolve, "image/png"));
+        if (!blob) {
+          throw new Error("No se pudo generar la imagen");
+        }
+
+        if (navigator.clipboard && window.ClipboardItem) {
+          await navigator.clipboard.write([
+            new ClipboardItem({ "image/png": blob })
+          ]);
+          setCopyStatus("Captura copiada al portapapeles");
+          return;
+        }
+
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "cartilla-osmedica.png";
+        link.click();
+        URL.revokeObjectURL(url);
+        setCopyStatus("Tu navegador no copia imágenes; descargué el PNG");
+      } catch (error) {
+        setCopyStatus("No pude copiar la captura en este navegador");
+      } finally {
+        document.body.classList.remove("capture-focus-modal");
+        document.body.classList.remove("capture-mode");
+        els.copyScreenshot.disabled = false;
+      }
+    }
+
+    async function applyFilters(resetPage = true) {
+      if (resetPage) {
+        state.page = 1;
+      }
+      state.q = els.searchInput.value.trim();
+      state.tipoPrestador = els.tipoSelect.value;
+      state.especialidad = els.especialidadSelect.value;
+      state.region = els.regionSelect.value;
+      state.localidad = els.localidadSelect.value;
+      await loadResults();
+    }
+
+    els.searchForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      await applyFilters(true);
+    });
+
+    els.applyFilters.addEventListener("click", async () => {
+      await applyFilters(true);
+    });
+
+    els.clearFilters.addEventListener("click", async () => {
+      els.searchInput.value = "";
+      els.tipoSelect.value = "";
+      els.especialidadSelect.value = "";
+      els.regionSelect.value = "";
+      await loadLocalidades("");
+      els.localidadSelect.value = "";
+      state.selectedId = null;
+      state.selectedSlug = null;
+      await applyFilters(true);
+    });
+
+    els.regionSelect.addEventListener("change", async () => {
+      await loadLocalidades(els.regionSelect.value);
+      els.localidadSelect.value = "";
+    });
+
+    els.prevPage.addEventListener("click", async () => {
+      if (state.page <= 1) return;
+      state.page -= 1;
+      await applyFilters(false);
+    });
+
+    els.nextPage.addEventListener("click", async () => {
+      state.page += 1;
+      await applyFilters(false);
+    });
+
+    els.copyScreenshot.addEventListener("click", async () => {
+      await copyScreenshotToClipboard();
+    });
+
+    els.modalClose.addEventListener("click", closeDetailModal);
+
+    els.modalRoot.addEventListener("click", (event) => {
+      if (event.target.dataset.closeModal === "true") {
+        closeDetailModal();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && els.modalRoot.classList.contains("open")) {
+        closeDetailModal();
+      }
+    });
+
+    (async function init() {
+      try {
+        await loadCatalogs();
+        await loadLocalidades("");
+        await loadResults();
+      } catch (error) {
+        els.resultsTitle.textContent = "No pude cargar la cartilla";
+        els.resultsMeta.textContent = "";
+        els.resultsList.innerHTML = '<p class="empty">Hubo un problema cargando la API. Probá recargar la página.</p>';
+        els.detailPanel.innerHTML = '<p class="empty">Sin datos para mostrar.</p>';
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+"""OSMEDICA Cartilla API package."""
