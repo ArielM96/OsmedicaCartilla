@@ -818,7 +818,8 @@
       region: "",
       localidad: "",
       selectedId: null,
-      selectedSlug: null
+      selectedSlug: null,
+      deepLink: false
     };
 
     let selectedDetail = null;
@@ -1040,6 +1041,78 @@
       modalClose: document.getElementById("modal-close")
     };
 
+    function prestadorUrl(slug) {
+      const url = new URL(location.href);
+      url.search = "";
+      url.hash = "";
+      url.searchParams.set("prestador", slug);
+      return url.toString();
+    }
+
+    function syncUrl(slug) {
+      try {
+        const url = new URL(location.href);
+        if (slug) {
+          url.searchParams.set("prestador", slug);
+        } else {
+          url.searchParams.delete("prestador");
+        }
+        history.replaceState(null, "", url);
+      } catch (error) {
+        /* la URL es un extra: ignorar si el navegador no la permite */
+      }
+    }
+
+    async function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+      const area = document.createElement("textarea");
+      area.value = text;
+      area.style.position = "fixed";
+      area.style.opacity = "0";
+      document.body.appendChild(area);
+      area.select();
+      const ok = document.execCommand("copy");
+      area.remove();
+      if (!ok) {
+        throw new Error("copy failed");
+      }
+    }
+
+    async function sharePrestador(button) {
+      const item = selectedDetail;
+      const status = button.parentElement.querySelector(".share-status")
+        || button.closest(".modal-root, .detail").querySelector(".share-status");
+      const url = prestadorUrl(button.dataset.shareSlug);
+      const setStatus = (message) => { if (status) status.textContent = message; };
+
+      if (navigator.share) {
+        try {
+          await navigator.share({ title: item ? `${item.nombre} · Cartilla OSMEDICA` : "Cartilla OSMEDICA", url });
+          return;
+        } catch (error) {
+          if (error && error.name === "AbortError") {
+            return;
+          }
+        }
+      }
+      try {
+        await copyText(url);
+        setStatus("Enlace copiado al portapapeles.");
+      } catch (error) {
+        setStatus(`No pude copiarlo automáticamente. Enlace: ${url}`);
+      }
+    }
+
+    document.addEventListener("click", (event) => {
+      const button = event.target.closest(".share-button");
+      if (button) {
+        sharePrestador(button);
+      }
+    });
+
     function formatNumber(value) {
       return new Intl.NumberFormat("es-AR").format(value);
     }
@@ -1192,6 +1265,12 @@
             <a class="detail-link" href="${item.source.url}" target="_blank" rel="noreferrer">Abrir ficha en OSMEDICA</a>
             <p class="caption">Última modificación registrada: ${item.source.lastModified || "sin dato"}</p>
           </div>
+
+          <div class="detail-block">
+            <h3>Compartir</h3>
+            <button type="button" class="share-button" data-share-slug="${item.slug}">🔗 Compartir este prestador</button>
+            <p class="caption share-status" aria-live="polite"></p>
+          </div>
         `;
       }
 
@@ -1240,7 +1319,9 @@
 
             <div class="modal-actions">
               <button id="modal-copy-button" type="button">📸 Copiar este popup</button>
+              <button type="button" class="share-button" data-share-slug="${item.slug}">🔗 Compartir enlace</button>
             </div>
+            <p class="modal-note share-status" aria-live="polite"></p>
             <p class="modal-note modal-capture-note">La captura prioriza esta ficha y difumina el contenido de fondo.</p>
           </div>
         </div>
@@ -1371,6 +1452,7 @@
       try {
         const item = await fetchJson(`/api/v1/prestadores/${encodeURIComponent(identifier)}`);
         selectedDetail = item;
+        syncUrl(item.slug);
         els.detailPanel.innerHTML = detailMarkup(item, true);
         loadMapPreviews(item);
         const trigger = document.getElementById("detail-expand-trigger");
@@ -1396,7 +1478,9 @@
       renderResults(data.items, data.pagination);
 
       if (data.items.length) {
-        const shouldPickFirst = !state.selectedId || !data.items.some((item) => item.id === state.selectedId);
+        const keepDeepLink = Boolean(state.selectedId) && state.deepLink;
+        state.deepLink = false;
+        const shouldPickFirst = !keepDeepLink && (!state.selectedId || !data.items.some((item) => item.id === state.selectedId));
         if (shouldPickFirst) {
           state.selectedId = data.items[0].id;
           state.selectedSlug = data.items[0].slug;
@@ -1544,7 +1628,21 @@
       try {
         await loadCatalogs();
         await loadLocalidades("");
+        const requestedSlug = new URLSearchParams(location.search).get("prestador");
+        if (requestedSlug) {
+          try {
+            const linked = await fetchJson(`/api/v1/prestadores/${encodeURIComponent(requestedSlug)}`);
+            state.selectedId = linked.id;
+            state.selectedSlug = linked.slug;
+            state.deepLink = true;
+          } catch (error) {
+            syncUrl(null);
+          }
+        }
         await loadResults();
+        if (state.deepLink === false && requestedSlug && state.selectedSlug === requestedSlug && window.matchMedia("(max-width: 900px)").matches) {
+          els.detailPanel.scrollIntoView({ block: "start" });
+        }
       } catch (error) {
         els.resultsTitle.textContent = "No pude cargar la cartilla";
         els.resultsMeta.textContent = "";
