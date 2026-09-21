@@ -4,8 +4,9 @@ from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 
-from .config import BASE_DIR
+from .config import BASE_DIR, MAP_CACHE_PATH
 from .data import get_store
+from .maps import LocationGeocoder
 from .schemas import (
     CatalogItem,
     PrestadorItem,
@@ -23,6 +24,8 @@ app = FastAPI(
 
 INDEX_FILE = BASE_DIR / "backend" / "app" / "static" / "index.html"
 FAVICON_FILE = BASE_DIR / "backend" / "app" / "static" / "favicon.svg"
+LOGO_FILE = BASE_DIR / "backend" / "app" / "static" / "osmedica-logo-horizontal.png"
+geocoder = LocationGeocoder(MAP_CACHE_PATH)
 
 app.add_middleware(
     CORSMiddleware,
@@ -46,6 +49,11 @@ def favicon_svg() -> FileResponse:
 @app.get("/favicon.ico")
 def favicon_ico() -> FileResponse:
     return FileResponse(FAVICON_FILE, media_type="image/svg+xml")
+
+
+@app.get("/osmedica-logo-horizontal.png")
+def osmedica_logo() -> FileResponse:
+    return FileResponse(LOGO_FILE, media_type="image/png")
 
 
 @app.get("/api/v1/health")
@@ -84,6 +92,36 @@ def get_prestador(identifier: str) -> dict:
     if not prestador:
         raise HTTPException(status_code=404, detail="Prestador no encontrado")
     return prestador
+
+
+@app.get("/api/v1/prestadores/{identifier}/mapa")
+def get_prestador_map(identifier: str) -> dict:
+    prestador = get_store().get_prestador(identifier)
+    if not prestador:
+        raise HTTPException(status_code=404, detail="Prestador no encontrado")
+
+    contacto = prestador.get("contacto") or {}
+    query = contacto.get("ubicacion") or contacto.get("direccion")
+    if not query:
+        raise HTTPException(status_code=404, detail="Ubicación no disponible")
+
+    # Some source values include commercial areas such as "GBA Zona Oeste",
+    # which are useful to people but are not always understood by geocoders.
+    candidates = [f"{query}, Argentina"]
+    locality = query.split(",", 1)[0].strip()
+    if locality and locality != query:
+        candidates.append(f"{locality}, Argentina")
+
+    location = None
+    for candidate in candidates:
+        if not candidate:
+            continue
+        location = geocoder.locate(candidate)
+        if location:
+            break
+    if not location:
+        raise HTTPException(status_code=404, detail="No pude ubicar este prestador en el mapa")
+    return {"location": location, "precision": "aproximada"}
 
 
 @app.get("/api/v1/catalogos/tipos-prestador", response_model=list[CatalogItem])

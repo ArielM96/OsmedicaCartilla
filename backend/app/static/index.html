@@ -54,10 +54,6 @@
     }
 
     .hero {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 20px;
-      align-items: stretch;
       margin-bottom: 20px;
     }
 
@@ -112,6 +108,18 @@
       border-radius: var(--radius-xl);
     }
 
+    .brand-logo {
+      display: inline-flex;
+      width: min(370px, 82vw);
+      margin-bottom: 16px;
+    }
+
+    .brand-logo img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
     .eyebrow {
       display: inline-flex;
       align-items: center;
@@ -127,9 +135,9 @@
     }
 
     h1 {
-      margin: 16px 0 10px;
-      font-size: clamp(2rem, 3.8vw, 3.8rem);
-      line-height: 0.96;
+      margin: 10px 0 10px;
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      line-height: 1;
       letter-spacing: -0.04em;
     }
 
@@ -226,6 +234,27 @@
       display: grid;
       gap: 16px;
       align-content: start;
+    }
+
+    .filter-stats {
+      display: grid;
+      gap: 0;
+      margin-top: 22px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .filter-stats .stat {
+      padding: 10px 0;
+    }
+
+    .filter-stats .stat-value {
+      font-size: 1.45rem;
+    }
+
+    .filter-stats .stat-label {
+      font-size: 0.84rem;
+      margin-top: 2px;
     }
 
     .stat {
@@ -509,6 +538,52 @@
       color: #b5edf4;
     }
 
+    .map-preview {
+      position: relative;
+      height: 190px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      background: rgba(2, 42, 49, 0.76);
+    }
+
+    .map-preview iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      filter: saturate(0.86) contrast(1.04);
+    }
+
+    .map-preview-link {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      color: #e5fcff;
+      font-weight: 700;
+      text-decoration: none;
+      background: rgba(14, 121, 140, 0.38);
+      border: 1px solid rgba(183, 227, 230, 0.24);
+    }
+
+    .map-preview-link:hover,
+    .map-preview-link:focus-visible {
+      background: rgba(48, 193, 216, 0.26);
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .map-loading {
+      display: grid;
+      height: 100%;
+      place-items: center;
+      padding: 18px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
     .modal-actions {
       display: flex;
       flex-wrap: wrap;
@@ -627,7 +702,9 @@
   <main class="shell">
     <section class="hero">
       <div class="hero-card">
-        <span class="eyebrow">Cartilla OSMEDICA</span>
+        <a class="brand-logo" href="https://osmedica.com.ar/" target="_blank" rel="noopener noreferrer" aria-label="Ir al sitio oficial de OSMEDICA">
+          <img src="/osmedica-logo-horizontal.png" alt="OSMEDICA — La Obra Social de los Médicos">
+        </a>
         <h1>Buscá prestadores sin perderte en menús eternos.</h1>
         <p class="lead">
           Navegá por región, localidad, especialidad o tipo de prestador desde una vista única.
@@ -642,20 +719,6 @@
           <span id="copy-status" class="status-pill">Lista para capturar filtros y resultados</span>
         </div>
       </div>
-      <aside class="stats-card">
-        <div class="stat">
-          <span id="stat-total" class="stat-value">...</span>
-          <span class="stat-label">prestadores en cartilla</span>
-        </div>
-        <div class="stat">
-          <span id="stat-regiones" class="stat-value">...</span>
-          <span class="stat-label">regiones disponibles</span>
-        </div>
-        <div class="stat">
-          <span id="stat-especialidades" class="stat-value">...</span>
-          <span class="stat-label">especialidades registradas</span>
-        </div>
-      </aside>
     </section>
 
     <section class="grid">
@@ -688,6 +751,20 @@
         <div class="filter-actions">
           <button id="apply-filters" type="button">Aplicar</button>
           <button id="clear-filters" type="button" class="ghost">Limpiar</button>
+        </div>
+        <div class="filter-stats" aria-label="Resumen de cartilla">
+          <div class="stat">
+            <span id="stat-total" class="stat-value">...</span>
+            <span class="stat-label">prestadores en cartilla</span>
+          </div>
+          <div class="stat">
+            <span id="stat-regiones" class="stat-value">...</span>
+            <span class="stat-label">regiones disponibles</span>
+          </div>
+          <div class="stat">
+            <span id="stat-especialidades" class="stat-value">...</span>
+            <span class="stat-label">especialidades registradas</span>
+          </div>
         </div>
       </aside>
 
@@ -1065,6 +1142,15 @@
       return parts.length ? parts.join("") : '<p class="caption">Sin datos de contacto</p>';
     }
 
+    function mapPreviewMarkup(item) {
+      if (!item.contacto || !item.contacto.googleMapsUrl) return "";
+      return `
+        <div class="map-preview" data-map-preview="${item.slug}" style="margin-top:14px;">
+          <div class="map-loading">Cargando mapa de ubicación…</div>
+        </div>
+        <p class="modal-note">Ubicación aproximada según la localidad informada. Podés acercar, alejar o mover el mapa; el botón abre Google Maps.</p>`;
+    }
+
     function detailMarkup(item, compact = false) {
       if (compact) {
         return `
@@ -1098,6 +1184,7 @@
           <div class="detail-block">
             <h3>Contacto</h3>
             ${renderContacto(item.contacto)}
+            ${mapPreviewMarkup(item)}
           </div>
 
           <div class="detail-block">
@@ -1149,6 +1236,7 @@
             ${renderChips(item.regiones)}
             <div style="height:10px;"></div>
             ${renderChips(item.localidades)}
+            ${mapPreviewMarkup(item)}
 
             <div class="modal-actions">
               <button id="modal-copy-button" type="button">📸 Copiar este popup</button>
@@ -1168,11 +1256,59 @@
       els.modalRoot.classList.add("open");
       els.modalRoot.setAttribute("aria-hidden", "false");
       document.body.style.overflow = "hidden";
+      loadMapPreviews(selectedDetail);
 
       const modalCopyButton = document.getElementById("modal-copy-button");
       if (modalCopyButton) {
         modalCopyButton.addEventListener("click", async () => {
           await copyScreenshotToClipboard();
+        });
+      }
+    }
+
+    function openStreetMapEmbedUrl(latitude, longitude) {
+      const span = 0.018;
+      const left = longitude - span;
+      const bottom = latitude - span;
+      const right = longitude + span;
+      const top = latitude + span;
+      const params = new URLSearchParams({
+        bbox: `${left},${bottom},${right},${top}`,
+        layer: "mapnik",
+        marker: `${latitude},${longitude}`
+      });
+      return `https://www.openstreetmap.org/export/embed.html?${params.toString()}`;
+    }
+
+    async function loadMapPreviews(item) {
+      const containers = Array.from(document.querySelectorAll("[data-map-preview]"))
+        .filter((container) => container.dataset.mapPreview === item.slug);
+      const googleMapsUrl = item && item.contacto && item.contacto.googleMapsUrl;
+      if (!containers.length || !googleMapsUrl) return;
+
+      try {
+        const data = await fetchJson(`/api/v1/prestadores/${encodeURIComponent(item.slug)}/mapa`);
+        const location = data.location;
+        containers.forEach((container) => {
+          const iframe = document.createElement("iframe");
+          iframe.src = openStreetMapEmbedUrl(location.latitude, location.longitude);
+          iframe.title = `Mapa aproximado de ${item.nombre}`;
+          iframe.loading = "lazy";
+
+          const link = document.createElement("a");
+          link.className = "map-preview-link";
+          link.href = googleMapsUrl;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.textContent = "Abrir ubicación en Google Maps ↗";
+          link.setAttribute("aria-label", `Abrir ${item.nombre} en Google Maps`);
+
+          container.replaceChildren(iframe);
+          container.insertAdjacentElement("afterend", link);
+        });
+      } catch (error) {
+        containers.forEach((container) => {
+          container.innerHTML = '<div class="map-loading">No pude cargar el mapa en este momento. Usá el enlace de Google Maps para abrir la ubicación.</div>';
         });
       }
     }
@@ -1236,6 +1372,7 @@
         const item = await fetchJson(`/api/v1/prestadores/${encodeURIComponent(identifier)}`);
         selectedDetail = item;
         els.detailPanel.innerHTML = detailMarkup(item, true);
+        loadMapPreviews(item);
         const trigger = document.getElementById("detail-expand-trigger");
         if (trigger) {
           trigger.addEventListener("click", openDetailModal);

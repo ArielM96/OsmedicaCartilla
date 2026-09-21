@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 
@@ -9,3 +10,4 @@ TIPOS_PRESTADOR_PATH = RESEARCH_DIR / "tipo_de_prestador.json"
 TIPOS_GUARDIA_PATH = RESEARCH_DIR / "tipo_de_guardia.json"
 ESPECIALIDADES_PATH = RESEARCH_DIR / "especialidades.json"
 ESTUDIOS_PATH = RESEARCH_DIR / "estudios.json"
+MAP_CACHE_PATH = Path(os.getenv("OSMEDICA_MAP_CACHE_PATH", "/var/lib/osmedica-cartilla/geocodes.json"))
