@@ -8,21 +8,21 @@ API pública y aislada para consultar la cartilla de OSMEDICA sin depender de ba
 - no usa PostgreSQL ni variables del entorno de otros proyectos
 - escucha en `127.0.0.1:8012`
 - sincronización diaria: `scripts/sync_cartilla.sh` → `research/discover.py` (cron **04:15**, ver `deploy/osmedica-cartilla-sync.cron`)
-- Nginx expone solo la ruta pública `/cartilla-api/`
+- Nginx lo expone en `https://cartilla.osmedicaafiliaciones.com/`
 
 ## Endpoints públicos
 
-- `GET /cartilla-api/`
-- `GET /cartilla-api/api/v1/health`
-- `GET /cartilla-api/api/v1/prestadores`
-- `GET /cartilla-api/api/v1/prestadores/{id-o-slug}`
-- `GET /cartilla-api/api/v1/catalogos/tipos-prestador`
-- `GET /cartilla-api/api/v1/catalogos/tipos-guardia`
-- `GET /cartilla-api/api/v1/catalogos/especialidades`
-- `GET /cartilla-api/api/v1/catalogos/estudios`
-- `GET /cartilla-api/api/v1/catalogos/regiones`
-- `GET /cartilla-api/api/v1/catalogos/localidades`
-- `GET /cartilla-api/api/v1/busqueda/sugerencias`
+- `GET /`
+- `GET /api/v1/health`
+- `GET /api/v1/prestadores`
+- `GET /api/v1/prestadores/{id-o-slug}`
+- `GET /api/v1/catalogos/tipos-prestador`
+- `GET /api/v1/catalogos/tipos-guardia`
+- `GET /api/v1/catalogos/especialidades`
+- `GET /api/v1/catalogos/estudios`
+- `GET /api/v1/catalogos/regiones`
+- `GET /api/v1/catalogos/localidades`
+- `GET /api/v1/busqueda/sugerencias`
 
 ## Desarrollo local
 
