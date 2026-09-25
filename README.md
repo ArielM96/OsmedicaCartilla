@@ -20,7 +20,8 @@ Crear una capa propia sobre la fuente pública actual para:
 - contacto enriquecido: dirección, teléfonos y Google Maps desde el listado FacetWP (54 páginas) + fallback REST
 - API FastAPI operativa con dataset local
 - despliegue aislado en `127.0.0.1:8012`
-- publicación pública en `https://cartilla.plcommsdash.site/`
+- publicación pública en `https://cartilla.osmedicaafiliaciones.com/`
+- `cartilla.plcommsdash.site` redirige con 301 al dominio nuevo
 
 ## Estructura
 
@@ -28,7 +29,6 @@ Crear una capa propia sobre la fuente pública actual para:
 - `research/` → datasets y análisis inicial
 - `backend/` → implementación de la API
 - `deploy/` → referencia de systemd y Nginx
-- `frontend/` → cliente o demo futura
 
 ## Fuente pública detectada
 
@@ -58,14 +58,16 @@ Horario: **04:15** todos los días (usuario `root`). Log: `/var/log/osmedica-car
 
 ## URL pública actual
 
-- `https://plcommsdash.site/cartilla-api/`
-- `https://plcommsdash.site/cartilla-api/api/v1/health`
-- `https://plcommsdash.site/cartilla-api/api/v1/prestadores`
+- `https://cartilla.osmedicaafiliaciones.com/`
+- `https://cartilla.osmedicaafiliaciones.com/api/v1/health`
+- `https://cartilla.osmedicaafiliaciones.com/api/v1/prestadores`
+
+Nginx: `deploy/nginx.cartilla.osmedicaafiliaciones.com.conf` (proxy a `127.0.0.1:8012`) y `deploy/nginx.cartilla.plcommsdash.site.redirect.conf` (redirección 301 desde el dominio anterior). `deploy/nginx.cartilla-api.conf` es la configuración legacy de la ruta `/cartilla-api/`.
 
 ## Aislamiento de seguridad
 
 - la API no usa PostgreSQL
-- la API no lee nada de `plcommsdash` ni `plcommsdash`
+- la API no lee nada de las bases ni servicios de `plcommsdash`
 - los datos salen únicamente de archivos dentro de `research/`
 - el servicio escucha sólo en `127.0.0.1`
-- Nginx expone únicamente la ruta pública `/cartilla-api/`
+- Nginx expone el servicio únicamente vía `cartilla.osmedicaafiliaciones.com`
